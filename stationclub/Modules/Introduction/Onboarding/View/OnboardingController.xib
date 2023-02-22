@@ -50,11 +50,6 @@
                     <state key="normal" title="Get started">
                         <color key="titleColor" name="MainText"/>
                     </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="skeletonCornerRadius">
-                            <real key="value" value="2"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="btnNextClicked:" destination="-1" eventType="touchUpInside" id="Awg-N8-hB0"/>
                     </connections>
@@ -63,11 +58,12 @@
                     <rect key="frame" x="24" y="722" width="366" height="0.0"/>
                 </pageControl>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGC-0u-TqI" customClass="AccentButton" customModule="stationclub" customModuleProvider="target">
-                    <rect key="frame" x="175.5" y="72" width="63" height="40"/>
+                    <rect key="frame" x="168.5" y="72" width="77" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="shh-yF-UaY"/>
                     </constraints>
-                    <color key="tintColor" name="MainText"/>
+                    <color key="tintColor" name="White"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="14" maxY="0.0"/>
                     <state key="normal" title="language">
                         <color key="titleColor" name="MainText"/>
                     </state>
@@ -108,7 +104,10 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Primary">
-            <color red="0.52499997615814209" green="0.42699998617172241" blue="0.88200002908706665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.37647058823529411" green="0.38823529411764707" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

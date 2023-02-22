@@ -41,10 +41,16 @@ class AppLocationManager: NSObject {
     }
     
     func checkLocationService() {
-        if CLLocationManager.locationServicesEnabled() {
-            setupLocationManager()
-            checkLocationAuthorization()
+        DispatchQueue.global().async {
+            if CLLocationManager.locationServicesEnabled() {
+                self.setupLocationManager()
+                self.checkLocationAuthorization()
+            }
         }
+//        if CLLocationManager.locationServicesEnabled() {
+//            setupLocationManager()
+//            checkLocationAuthorization()
+//        }
     }
     
     func checkLocationAuthorization() {

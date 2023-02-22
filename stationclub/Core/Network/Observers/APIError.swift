@@ -2,7 +2,23 @@
 //  APIError.swift
 //  stationclub
 //
-//  Created by I MAC on 16/02/2023.
+//  Created by Salah Khaled on 01/08/2022.
+//  Copyright © 2022 Salah Khaled. All rights reserved.
 //
 
-import Foundation
+enum APIErrorType {
+
+    case server
+    case noData
+    case parsing
+    case string
+    case network
+    case known
+}
+
+struct APIError {
+    
+    var type: APIErrorType
+    var code: Int? = 0
+    var message: String?
+}

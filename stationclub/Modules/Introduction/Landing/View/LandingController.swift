@@ -2,28 +2,66 @@
 //  LandingController.swift
 //  stationclub
 //
-//  Created by I MAC on 19/02/2023.
+//  Created by Salah Khaled on 01/08/2022.
+//  Copyright © 2022 Salah Khaled. All rights reserved.
 //
 
 import UIKit
 
-class LandingController: UIViewController {
+class LandingController: BaseController {
 
+    @IBOutlet weak var viewGradient: UIView!
+    @IBOutlet weak var imgBackground: UIImageView!
+    @IBOutlet weak var imgLogo: UIImageView!
+    @IBOutlet weak var lblAppName: UILabel!
+    @IBOutlet weak var lblDescription: UILabel!
+    @IBOutlet weak var btnSignUp: AppButton!
+    @IBOutlet weak var btnSignIn: AccentButton!
+    @IBOutlet weak var btnSkip: AccentButton!
+    
+    var presenter: LandingPresenterInterface!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupView()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func setupView() {
+        imgBackground.image = UIImage.init(named: Images.landingBackground)
+        viewGradient.alpha = 0.85
+        viewGradient.addGradient(colorArray: [.appBlack, .appBlack])
+        
+        imgLogo.image = UIImage(named: Images.logo)
+        lblAppName.text = "app_name".l()
+        lblDescription.text = "app_desc".l()
+        btnSignUp.setTitle("sign_up_now")
+        btnSignIn.setTitle("sign_in")
+        btnSkip.setTitle("skip")
+        btnSkip.setRadius(20)
+        
     }
-    */
+    
+    
+    // MARK:- Events
+    
+    @IBAction func btnSignUpClicked(_ sender: Any) {
+        presenter.didClickedSignUp()
+    }
+    
+    @IBAction func btnSignInClicked(_ sender: Any) {
+        presenter.didClickedLogIn()
+    }
+    
+    @IBAction func btnSkipClicked(_ sender: Any) {
+        presenter.didClickedSkip()
+    }
+    
+}
+
+extension LandingController: LandingView {
 
 }

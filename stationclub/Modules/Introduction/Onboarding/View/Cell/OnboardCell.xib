@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,16 +22,16 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="TEw-7B-ggF">
-                        <rect key="frame" x="72" y="271" width="270" height="354.5"/>
+                        <rect key="frame" x="100" y="200" width="214" height="298.5"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NEf-Vb-11O">
-                                <rect key="frame" x="0.0" y="0.0" width="270" height="270"/>
+                                <rect key="frame" x="0.0" y="0.0" width="214" height="214"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NEf-Vb-11O" secondAttribute="height" multiplier="1:1" id="tyw-xh-B5n"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="uZ1-sZ-ujg">
-                                <rect key="frame" x="118.5" y="302" width="33.5" height="52.5"/>
+                                <rect key="frame" x="90.5" y="246" width="33.5" height="52.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiT-PG-FGN">
                                         <rect key="frame" x="0.0" y="0.0" width="33.5" height="19.5"/>
@@ -54,17 +54,16 @@
                     </stackView>
                 </subviews>
             </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="B2L-fq-qWN" secondAttribute="bottom" id="0Mm-fI-XPu"/>
+                <constraint firstItem="TEw-7B-ggF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="200" id="1zf-xW-gcD"/>
                 <constraint firstItem="B2L-fq-qWN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Iaw-un-mt4"/>
-                <constraint firstAttribute="trailing" secondItem="TEw-7B-ggF" secondAttribute="trailing" constant="72" id="NtB-Ew-I7Z"/>
+                <constraint firstAttribute="trailing" secondItem="TEw-7B-ggF" secondAttribute="trailing" constant="100" id="NtB-Ew-I7Z"/>
                 <constraint firstItem="B2L-fq-qWN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VMm-c3-Wqb"/>
-                <constraint firstItem="TEw-7B-ggF" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Xcc-aV-5SA"/>
                 <constraint firstAttribute="trailing" secondItem="B2L-fq-qWN" secondAttribute="trailing" id="aKy-Bn-9wf"/>
-                <constraint firstItem="TEw-7B-ggF" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="cmg-h1-kvR"/>
-                <constraint firstItem="TEw-7B-ggF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="72" id="plc-fa-tAK"/>
+                <constraint firstItem="TEw-7B-ggF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="100" id="plc-fa-tAK"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="414" height="896"/>
             <connections>
                 <outlet property="desc" destination="sDb-Ex-dih" id="CpP-px-grQ"/>

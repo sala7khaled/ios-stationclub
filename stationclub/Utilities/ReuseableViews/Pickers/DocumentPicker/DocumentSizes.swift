@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum FileSizes {
+enum DocumentSizes {
     static let MB = "MB"
     static let KB = "KB"
 }

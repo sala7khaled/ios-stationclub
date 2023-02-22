@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,40 +25,40 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzR-CI-0qb" customClass="customView" customModule="stationclub" customModuleProvider="target">
-                    <rect key="frame" x="41.5" y="327" width="331" height="242.5"/>
+                    <rect key="frame" x="20.5" y="328" width="373" height="240.5"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KW6-87-qXN">
-                            <rect key="frame" x="153.5" y="30" width="24" height="24"/>
+                            <rect key="frame" x="174.5" y="30" width="24" height="24"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="24" id="0dT-E9-VDJ"/>
                                 <constraint firstAttribute="width" secondItem="KW6-87-qXN" secondAttribute="height" multiplier="1:1" id="Car-yH-RrW"/>
                             </constraints>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Jjz-5f-N2M">
-                            <rect key="frame" x="20" y="84" width="291" height="138.5"/>
+                            <rect key="frame" x="20" y="84" width="333" height="136.5"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="12X-4e-c3k">
-                                    <rect key="frame" x="0.0" y="0.0" width="291" height="46.5"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="12X-4e-c3k">
+                                    <rect key="frame" x="0.0" y="0.0" width="333" height="44.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uk8-QV-djg">
-                                            <rect key="frame" x="0.0" y="0.0" width="291" height="19.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="333" height="19.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" name="MainText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbv-jN-cFw">
-                                            <rect key="frame" x="0.0" y="29.5" width="291" height="17"/>
+                                            <rect key="frame" x="0.0" y="27.5" width="333" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" systemColor="systemGrayColor"/>
+                                            <color key="textColor" name="SubText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Q0b-FK-lJn">
-                                    <rect key="frame" x="0.0" y="86.5" width="291" height="52"/>
+                                    <rect key="frame" x="0.0" y="84.5" width="333" height="52"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM3-Ds-bGT" customClass="AccentButton" customModule="stationclub" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="135.5" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="156.5" height="52"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="cancel"/>
                                             <connections>
@@ -67,7 +66,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3H-rZ-Z03" customClass="AppButton" customModule="stationclub" customModuleProvider="target">
-                                            <rect key="frame" x="155.5" y="0.0" width="135.5" height="52"/>
+                                            <rect key="frame" x="176.5" y="0.0" width="156.5" height="52"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="52" id="JzS-LT-9Qv"/>
                                             </constraints>
@@ -97,7 +96,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="IzR-CI-0qb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="KTi-TB-ZNQ"/>
-                <constraint firstItem="IzR-CI-0qb" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.8" id="WAb-At-o3F"/>
+                <constraint firstItem="IzR-CI-0qb" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.9" id="WAb-At-o3F"/>
                 <constraint firstItem="IzR-CI-0qb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vEq-EA-ZhK"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
@@ -107,8 +106,11 @@
         <namedColor name="Cell">
             <color red="0.078431372549019607" green="0.078431372549019607" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="MainText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SubText">
+            <color red="0.40392156862745099" green="0.42352941176470588" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

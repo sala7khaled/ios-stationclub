@@ -60,7 +60,7 @@ class FloatTabBarView: UIView {
         button.setImage(normalIcon, for: .normal)
         button.setImage(selectedIcon, for: .selected)
         button.tag = index
-        button.adjustsImageWhenHighlighted = false
+//        button.adjustsImageWhenHighlighted = false
         button.addTarget(self, action: #selector(changeTab(_:)), for: .touchUpInside)
         return button
     }

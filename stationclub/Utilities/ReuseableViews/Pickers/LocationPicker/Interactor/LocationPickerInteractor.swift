@@ -2,7 +2,13 @@
 //  LocationPickerInteractor.swift
 //  stationclub
 //
-//  Created by I MAC on 16/02/2023.
+//  Created by Salah Khaled on 01/08/2022.
+//  Copyright © 2022 Salah Khaled. All rights reserved.
 //
 
-import Foundation
+import UIKit
+    
+class LocationPickerInteractor: LocationPickerInteractorInterface {
+    
+    var output: LocationPickerInteractorOutput?
+}

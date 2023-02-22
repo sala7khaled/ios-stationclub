@@ -2,28 +2,42 @@
 //  SplashController.swift
 //  stationclub
 //
-//  Created by I MAC on 19/02/2023.
+//  Created by Salah Khaled on 30/07/2022.
+//  Copyright © 2022 Salah Khaled. All rights reserved.
 //
 
 import UIKit
 
 class SplashController: UIViewController {
-
+    
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet weak var imgLogo: UIImageView!
+    @IBOutlet weak var viewBackground: UIImageView!
+    @IBOutlet weak var lblCopyright: UILabel!
+    
+    var presenter: SplashPresenterInterface!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setupView()
+        presenter.viewDidLoad()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        spinner.stopAnimating()
     }
-    */
+    
+    
+    func setupView() {
+        spinner.startAnimating()
+        imgLogo.image = UIImage.init(named: Images.appLogo)
+        viewBackground.image = UIImage.init(named: Images.splash)
+        lblCopyright.text = "copy_right".l()
+    }
+    
+}
 
+extension SplashController: SplashView {
+    
 }

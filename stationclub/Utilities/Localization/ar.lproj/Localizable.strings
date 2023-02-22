@@ -1,71 +1,73 @@
 /*
   Localizable.strings
-  stationclub
-
-  Created by Salah Khaled on 30/07/2022.
-  Copyright © 2022 Salah Khaled. All rights reserved.
+  mensa
+ 
+  Created by Mohamed Elbana on 3/15/21.
+  Copyright © 2021 Mohamed Elbana. All rights reserved.
 */
 
 // MARK: MAIN
 
 "app_name" = "stationclub";
-"copy_right" = "Copyright © 2022 stationclub. All rights reserved.";
-"ok" = "Ok";
-"got_it" = "Got it";
-"confirm" = "Confirm";
-"cancel" = "Cancel";
+"copy_right" = "حقوق الملكية © stationclub, كل الحقوق محفوظة";
+"ok" = "موافق";
+"got_it" = "لقد فهمت";
+"confirm" = "تأكيد";
+"cancel" = "إلغاء";
+"try_again" = "أعد المحاولة";
 
 
 // MARK: LANGUAGE
 
-"language" = "English";
-"change_language" = "Change language";
-"change_language_title" = "Change laguage to Arabic";
-"change_language_message" = "Are you sure you want to change language to Arabic?";
+"language" = "اللغة العربية";
+"change" = "تغيير";
+"change_language" = "تغيير اللغة";
+"change_language_title" = "تغيير اللغة الى الإنجليزية";
+"change_language_message" = "هل انت متأكد من تغيير اللغة الي الإنجليزية؟";
 
 
 // MARK: RESPONSE
 
-"no_internet_connection" = "No internet connection!";
-"something_went_worng" = "Something went worng!";
-"server_error" = "Server error!";
-"no_response_found" = "No response found!";
-"parsing_error" = "Parsing error!";
-"session_expired" = "Session expired!";
+"no_internet_connection" = "لا يوجد اتصال بالانترنت!";
+"something_went_worng" = "حدث خطأ!";
+"server_error" = "حدث خطأ من الخادم!";
+"no_response_found" = "لا توجد بيانات!";
+"parsing_error" = "خطأ في عرض البيانات!";
+"session_expired" = "انتهت الجلسة!";
 
 
 // MARK: ONBOARD
 
-"next" = "Next";
-"get_started" = "Get started";
-"skip" = "Skip";
+"next" = "التالي";
+"get_started" = "ابدأ";
 
 
 // MARK: LANDING
 
-"app_desc" = "Relax and listen to your favorite radio station's stream anywhere. Unlimited access to over all the station.";
-"sign_up_now" = "Sign up now";
-"log_in" = "Log in";
+"app_desc" = "استمتع للاستماع إلي بث محطات الراديو المفضلة لديك في أي مكان — كل محطاتك المفضلة تحت يديك.";
+"sign_up_now" = "تسجيل مستخدم جديد الآن";
+"sign_in" = "تسجيل الدخول";
+"skip" = "تخطي";
 
 
 // MARK: SIGNIN
 
-"sign_in" = "Sign in";
-"email" = "Email";
-"enter_email" = "Enter your email";
-"empty_email" = "Email field is empty, please enter your email address.";
-"password" = "Password";
-"enter_password" = "Enter your password";
-"empty_password" = "Password field is empty, please enter your password.";
-"forget_your_password" = "Forget your password?";
-"invalid_email" = "The email you entered is not a valid email address.";
-"invalid_password" = "Password should be more than or equal 8 characters.";
+"email" = "البريد الإلكتروني";
+"enter_email" = "ادخل بريدك الإلكتروني";
+"empty_email" = "حقل البريد الإلكتروني فارغ، من فضلك ادخل بريدك الإلكتروني.";
+"password" = "كلمة المرور";
+"enter_password" = "ادخل كلمة المرور";
+"empty_password" = "حقل كلمة المرور فارغ، من فضلك ادخل كلمة مرورك.";
+"forget_your_password" = "هل نسيت كلمة المرور؟";
+"invalid_email" = "البريد الإلكتروني الذي ادخلته خاطئ";
+"invalid_password" = "كلمة المرور يجب ان تكون اكثر أو تساوي ٨ حروف";
 
 
 // MARK: HOME
 
-"home" = "Home";
-"favourites" = "Favourites";
-"notifications" = "Notifications";
-"profile" = "Profile";
-"on_live" = "Live stations around";
+
+"home" = "الصفحة الرئيسية";
+"favourites" = "المفضلة";
+"notifications" = "الإشعارات";
+"profile" = "الملف الشخصي";
+"on_live" = "مباشر الآن في";

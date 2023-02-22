@@ -2,7 +2,13 @@
 //  SplashInteractor.swift
 //  stationclub
 //
-//  Created by I MAC on 19/02/2023.
+//  Created by Salah Khaled on 30/07/2022.
+//  Copyright © 2022 Salah Khaled. All rights reserved.
 //
 
-import Foundation
+import UIKit
+    
+class SplashInteractor: SplashInteractorInterface {
+        
+    weak var output: SplashInteractorOutput?
+}

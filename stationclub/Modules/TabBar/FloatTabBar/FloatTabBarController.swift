@@ -16,10 +16,10 @@ class FloatTabBarController: UITabBarController {
         super.viewDidLoad()
 
         viewControllers = [
-            HomeRouter.assembleModule(),
+            OnboardingRouter.assembleModule(),
             createNavViewController(vc: OnboardingRouter.assembleModule(), title: "About", icon: "bubble.middle.bottom.fill"),
-            createNavViewController(vc: LandingRouter.assembleModule(), title: "Trending", icon: "flame.fill"),
-            createNavViewController(vc: SignInRouter.assembleModule(), title: "Settings", icon: "rectangle.3.offgrid.fill")
+            createNavViewController(vc: OnboardingRouter.assembleModule(), title: "Trending", icon: "flame.fill"),
+            createNavViewController(vc: OnboardingRouter.assembleModule(), title: "Settings", icon: "rectangle.3.offgrid.fill")
         ]
         tabBar.isHidden = true
 

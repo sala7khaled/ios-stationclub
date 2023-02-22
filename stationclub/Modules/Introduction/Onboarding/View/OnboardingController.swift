@@ -21,18 +21,20 @@ class OnboardingController: BaseController {
     
     var currentPage = 0 {
         didSet {
-            
-            pageControl.currentPage = currentPage
-            createGradient(color: onboardList[currentPage].color)
-            
-            // Configure Button
-            if currentPage == onboardList.count - 1 {
-                morphRecButtom()
-            } else {
-                morphCircleButtom()
+            if oldValue != currentPage {
+                
+                pageControl.currentPage = currentPage
+                createGradient(color: onboardList[currentPage].color)
+                if currentPage == onboardList.count - 1 {
+                    morphRecButtom()
+                } else {
+                    morphCircleButtom()
+                }
+                
             }
         }
     }
+    
     var onboardList : [OnboardModel] = []
     
     var onboardText : [String ] = [
@@ -65,7 +67,6 @@ class OnboardingController: BaseController {
         }
     
     func setupViews() {
-        
         setupData()
         morphCircleButtom()
         
@@ -82,19 +83,12 @@ class OnboardingController: BaseController {
     
     func setupData () {
         onboardList.removeAll()
-        
-        var count: Int = 0
-        for img in Images.onboarding {
-            
-//            Pick the color from the image
-//            let colorFromImg = UIImage(named: img)!.averageColor ?? UIColor.appBlack
-            
-            onboardList.append(OnboardModel(id: count,
-                                            imgUrl: img,
-                                            title: onboardText[count],
-                                            desc: onboardDesc[count],
-                                            color: colors[count]))
-            count += 1
+        for i in Images.onboarding.indices {
+            onboardList.append(OnboardModel(id: i,
+                                            imgUrl: Images.onboarding[i],
+                                            title: onboardText[i],
+                                            desc: onboardDesc[i],
+                                            color: colors[i]))
         }
         
     }
@@ -114,7 +108,7 @@ class OnboardingController: BaseController {
     }
     
     @IBAction func btnChnageLanguageClicked(_ sender: Any) {
-        presenter.showChangeLanguageAlert(title: "change_language_title".l(), message: "change_language_message".l(), delegate: self)
+        presenter.didClickLanguage()
     }
     
 }
@@ -173,10 +167,4 @@ extension OnboardingController {
 
 extension OnboardingController: OnboardingView {
 
-}
-
-extension OnboardingController: CustomAlertControllerDelegate {
-    func didConfirm() {
-        Localization.shared.switchLanguage()
-    }
 }

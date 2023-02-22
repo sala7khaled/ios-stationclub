@@ -2,12 +2,21 @@
 //  CustomAlertEntity.swift
 //  stationclub
 //
-//  Created by I MAC on 20/02/2023.
+//  Created by Salah Khaled on 11/08/2022.
+//  Copyright © 2022 Salah Khaled. All rights reserved.
 //
 
 import Foundation
 
-enum CustomAlertType {
+struct CustomAlert {
+    var type: AlertType
+    var action: AlertAction
+    var title: String
+    var message: String
+    var buttonTitle: String
+}
+
+enum AlertType {
     case info
     case success
     case delete
@@ -16,7 +25,7 @@ enum CustomAlertType {
     case connection
 }
 
-enum CustomAlertAction {
+enum AlertAction {
     case one
     case two
 }

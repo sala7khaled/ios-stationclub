@@ -17,30 +17,35 @@ class CustomAlertController: PopupViewController {
     @IBOutlet weak var btnCancel: AccentButton!
     @IBOutlet weak var btnConfirm: AppButton!
     
-    var callBack: ((_ didConfirm: Bool)-> Void)?
-    
-    var alertType: CustomAlertType?
-    var alertAction: CustomAlertAction?
+    var alertType: AlertType?
+    var alertAction: AlertAction?
     var alertTitle: String?
     var alertMessage: String?
+    var alertButtonTitle: String?
+    var completion: (Bool) -> ()
     
-    init(type: CustomAlertType, action: CustomAlertAction, title: String, message: String) {
+    init(type: AlertType, action: AlertAction, title: String, message: String, buttonTitle: String, completion: @escaping (Bool) -> ()) {
         
         self.alertType = type
         self.alertAction = action
         self.alertTitle = title
         self.alertMessage = message
+        self.alertButtonTitle = buttonTitle
+        self.completion = completion
         
         super.init(nibName: String(describing: Self.self), bundle: .init(for: Self.self))
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupUI()
+    }
+    
+    func setupUI() {
         lblTitle.text = alertTitle
         lblTitle.isHidden = alertTitle?.isEmpty ?? false
         
@@ -52,31 +57,32 @@ class CustomAlertController: PopupViewController {
         btnConfirm.setRadius(8)
         
         btnCancel.setTitle("cancel")
-        btnConfirm.setTitle("confirm")
+        btnConfirm.setTitle(alertButtonTitle!)
         
-        btnCancel.layer.backgroundColor = UIColor(hex: 0x16161A).cgColor
+        
+        btnCancel.layer.backgroundColor = UIColor(hex: 0x19191E).cgColor
+        btnCancel.setTitleColor(UIColor.subText, for: .normal)
+        
+        btnConfirm.layer.backgroundColor = UIColor.primary.cgColor
         
         switch alertType {
         case .info:
             imgIcon.image = UIImage(named: Images.alertInfo)
-            btnConfirm.layer.backgroundColor = UIColor.appBlue.cgColor
         case .success:
             imgIcon.image = UIImage(named: Images.alertSuccess)
             btnConfirm.layer.backgroundColor = UIColor.appGreen.cgColor
-            btnConfirm.setTitleColor(UIColor.appBlack, for: .normal)
+            btnConfirm.setTitleColor(UIColor.appCell, for: .normal)
         case .delete:
             imgIcon.image = UIImage(named: Images.alertDelete)
             btnConfirm.layer.backgroundColor = UIColor.appRed.cgColor
         case .error:
             imgIcon.image = UIImage(named: Images.alertError)
-            btnConfirm.layer.backgroundColor = UIColor.primary.cgColor
         case .warning:
             imgIcon.image = UIImage(named: Images.alertWarning)
             btnConfirm.layer.backgroundColor = UIColor.appYellow.cgColor
-            btnConfirm.setTitleColor(UIColor.appBlack, for: .normal)
+            btnConfirm.setTitleColor(UIColor.appCell, for: .normal)
         case .connection:
             imgIcon.image = UIImage(named: Images.alertConnection)
-            btnConfirm.layer.backgroundColor = UIColor.primary.cgColor
         default:
             return
         }
@@ -84,7 +90,6 @@ class CustomAlertController: PopupViewController {
         switch alertAction {
         case .one:
             btnCancel.isHidden = true
-            btnConfirm.setTitle("got_it")
         case .two:
             btnCancel.isHidden = false
         default:
@@ -93,16 +98,11 @@ class CustomAlertController: PopupViewController {
     }
     
     @IBAction func cancel(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-        if let callBack = callBack {
-            callBack(false)
-        }
+        dismiss(animated: true)
     }
     
     @IBAction func confirm(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-        if let callBack = callBack {
-            callBack(true)
-        }
+        completion(true)
+        dismiss(animated: true)
     }
 }
