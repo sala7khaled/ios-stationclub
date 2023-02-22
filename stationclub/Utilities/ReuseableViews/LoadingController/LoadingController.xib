@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingController" customModule="stationclub" customModuleProvider="target">
+            <connections>
+                <outlet property="indicatorLoading" destination="z2f-lz-fa8" id="9o6-sv-BgB"/>
+                <outlet property="view" destination="igO-me-NJ3" id="GZZ-gB-50e"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="igO-me-NJ3">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tim-A8-Ddy">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ddm-ex-ksy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVw-ei-UrL">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3OM-7J-woe">
+                    <rect key="frame" x="162" y="403" width="90" height="90"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="z2f-lz-fa8">
+                            <rect key="frame" x="26.5" y="26.5" width="37" height="37"/>
+                            <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="FeP-be-BmI"/>
+                        <constraint firstItem="z2f-lz-fa8" firstAttribute="centerY" secondItem="3OM-7J-woe" secondAttribute="centerY" id="UGB-qV-hpu"/>
+                        <constraint firstItem="z2f-lz-fa8" firstAttribute="centerX" secondItem="3OM-7J-woe" secondAttribute="centerX" id="erR-w4-YNp"/>
+                        <constraint firstAttribute="height" constant="90" id="pqv-pI-6SG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.39619006849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jVw-ei-UrL" firstAttribute="leading" secondItem="u3S-if-EGa" secondAttribute="leading" id="5zJ-jH-1Sd"/>
+                <constraint firstItem="jVw-ei-UrL" firstAttribute="top" secondItem="igO-me-NJ3" secondAttribute="top" id="6lq-R3-2Na"/>
+                <constraint firstItem="tim-A8-Ddy" firstAttribute="trailing" secondItem="u3S-if-EGa" secondAttribute="trailing" id="7KW-2N-rOW"/>
+                <constraint firstItem="u3S-if-EGa" firstAttribute="trailing" secondItem="jVw-ei-UrL" secondAttribute="trailing" id="Tqi-AN-rC5"/>
+                <constraint firstItem="3OM-7J-woe" firstAttribute="centerY" secondItem="igO-me-NJ3" secondAttribute="centerY" id="Vn1-qn-NCZ"/>
+                <constraint firstAttribute="bottom" secondItem="tim-A8-Ddy" secondAttribute="bottom" id="XMe-xi-zWg"/>
+                <constraint firstItem="3OM-7J-woe" firstAttribute="centerX" secondItem="igO-me-NJ3" secondAttribute="centerX" id="eLL-EO-6lC"/>
+                <constraint firstAttribute="bottom" secondItem="jVw-ei-UrL" secondAttribute="bottom" id="rJ7-KT-I2a"/>
+                <constraint firstItem="tim-A8-Ddy" firstAttribute="top" secondItem="igO-me-NJ3" secondAttribute="top" id="roQ-C0-9lQ"/>
+                <constraint firstItem="tim-A8-Ddy" firstAttribute="leading" secondItem="u3S-if-EGa" secondAttribute="leading" id="vTe-gR-WOf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="u3S-if-EGa"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+</document>

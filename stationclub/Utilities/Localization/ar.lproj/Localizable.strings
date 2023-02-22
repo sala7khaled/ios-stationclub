@@ -1,0 +1,71 @@
+/*
+  Localizable.strings
+  stationclub
+
+  Created by Salah Khaled on 30/07/2022.
+  Copyright © 2022 Salah Khaled. All rights reserved.
+*/
+
+// MARK: MAIN
+
+"app_name" = "stationclub";
+"copy_right" = "Copyright © 2022 stationclub. All rights reserved.";
+"ok" = "Ok";
+"got_it" = "Got it";
+"confirm" = "Confirm";
+"cancel" = "Cancel";
+
+
+// MARK: LANGUAGE
+
+"language" = "English";
+"change_language" = "Change language";
+"change_language_title" = "Change laguage to Arabic";
+"change_language_message" = "Are you sure you want to change language to Arabic?";
+
+
+// MARK: RESPONSE
+
+"no_internet_connection" = "No internet connection!";
+"something_went_worng" = "Something went worng!";
+"server_error" = "Server error!";
+"no_response_found" = "No response found!";
+"parsing_error" = "Parsing error!";
+"session_expired" = "Session expired!";
+
+
+// MARK: ONBOARD
+
+"next" = "Next";
+"get_started" = "Get started";
+"skip" = "Skip";
+
+
+// MARK: LANDING
+
+"app_desc" = "Relax and listen to your favorite radio station's stream anywhere. Unlimited access to over all the station.";
+"sign_up_now" = "Sign up now";
+"log_in" = "Log in";
+
+
+// MARK: SIGNIN
+
+"sign_in" = "Sign in";
+"email" = "Email";
+"enter_email" = "Enter your email";
+"empty_email" = "Email field is empty, please enter your email address.";
+"password" = "Password";
+"enter_password" = "Enter your password";
+"empty_password" = "Password field is empty, please enter your password.";
+"forget_your_password" = "Forget your password?";
+"invalid_email" = "The email you entered is not a valid email address.";
+"invalid_password" = "Password should be more than or equal 8 characters.";
+
+
+// MARK: HOME
+
+"home" = "Home";
+"favourites" = "Favourites";
+"notifications" = "Notifications";
+"profile" = "Profile";
+"on_live" = "Live stations around";

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationPickerController" customModule="stationclub" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Zc3-e3-AYl">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldD-jl-f3F">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9A-e1-x7i" customClass="GMSMapView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="at0-Jy-lNZ" userLabel="Close">
+                            <rect key="frame" x="20" y="20" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="O9M-jo-isd"/>
+                                <constraint firstAttribute="width" secondItem="at0-Jy-lNZ" secondAttribute="height" multiplier="1:1" id="gIU-WS-I9d"/>
+                            </constraints>
+                            <state key="normal" image="ic-close-black"/>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMQ-zK-7gl">
+                            <rect key="frame" x="20" y="743" width="374" height="48"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcU-6l-bxm" userLabel="Lbl Address">
+                                    <rect key="frame" x="15" y="15" width="344" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                    <color key="textColor" name="MainText"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="vcU-6l-bxm" firstAttribute="leading" secondItem="eMQ-zK-7gl" secondAttribute="leading" constant="15" id="679-W7-6sF"/>
+                                <constraint firstAttribute="bottom" secondItem="vcU-6l-bxm" secondAttribute="bottom" constant="15" id="GfD-Yc-cKa"/>
+                                <constraint firstAttribute="trailing" secondItem="vcU-6l-bxm" secondAttribute="trailing" constant="15" id="ctJ-Kc-Oq3"/>
+                                <constraint firstItem="vcU-6l-bxm" firstAttribute="top" secondItem="eMQ-zK-7gl" secondAttribute="top" constant="15" id="icS-R4-0fQ"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwh-Hp-UJN" customClass="AppButton" customModule="Mensa" customModuleProvider="target">
+                            <rect key="frame" x="20" y="806" width="374" height="50"/>
+                            <color key="backgroundColor" red="0.16078431369999999" green="0.69803921570000005" blue="0.99607843139999996" alpha="1" colorSpace="deviceRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="UOt-tb-CXW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <state key="normal" title="Pick location">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="0.0" height="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXD-O8-CbP" userLabel="My location">
+                            <rect key="frame" x="354" y="688" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="MXD-O8-CbP" secondAttribute="height" multiplier="1:1" id="HOs-NZ-Srf"/>
+                                <constraint firstAttribute="width" constant="40" id="Ra7-Gb-FUH"/>
+                            </constraints>
+                            <state key="normal" image="ic-my-location"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="eMQ-zK-7gl" secondAttribute="trailing" constant="20" id="3vr-2t-ii9"/>
+                        <constraint firstItem="nwh-Hp-UJN" firstAttribute="top" secondItem="eMQ-zK-7gl" secondAttribute="bottom" constant="15" id="9wO-lz-2MW"/>
+                        <constraint firstItem="at0-Jy-lNZ" firstAttribute="top" secondItem="ldD-jl-f3F" secondAttribute="top" constant="20" id="CFc-Rq-AZw"/>
+                        <constraint firstItem="nwh-Hp-UJN" firstAttribute="leading" secondItem="ldD-jl-f3F" secondAttribute="leading" constant="20" id="JeG-nM-kGg"/>
+                        <constraint firstItem="eMQ-zK-7gl" firstAttribute="top" secondItem="MXD-O8-CbP" secondAttribute="bottom" constant="15" id="MeJ-K7-8qr"/>
+                        <constraint firstItem="Y9A-e1-x7i" firstAttribute="top" secondItem="ldD-jl-f3F" secondAttribute="top" id="SJf-Wi-BXx"/>
+                        <constraint firstItem="eMQ-zK-7gl" firstAttribute="leading" secondItem="ldD-jl-f3F" secondAttribute="leading" constant="20" id="Wlh-0t-Dhh"/>
+                        <constraint firstItem="Y9A-e1-x7i" firstAttribute="leading" secondItem="ldD-jl-f3F" secondAttribute="leading" id="cxB-3a-mu8"/>
+                        <constraint firstAttribute="bottom" secondItem="Y9A-e1-x7i" secondAttribute="bottom" id="fGt-Hh-JQv"/>
+                        <constraint firstAttribute="bottom" secondItem="nwh-Hp-UJN" secondAttribute="bottom" constant="40" id="lJ9-BI-Reu"/>
+                        <constraint firstItem="at0-Jy-lNZ" firstAttribute="leading" secondItem="ldD-jl-f3F" secondAttribute="leading" constant="20" id="mu6-oY-htI"/>
+                        <constraint firstAttribute="trailing" secondItem="MXD-O8-CbP" secondAttribute="trailing" constant="20" id="oqi-CE-01p"/>
+                        <constraint firstAttribute="trailing" secondItem="Y9A-e1-x7i" secondAttribute="trailing" id="uZd-Ei-OUK"/>
+                        <constraint firstAttribute="trailing" secondItem="nwh-Hp-UJN" secondAttribute="trailing" constant="20" id="zyE-A7-MMb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="ldD-jl-f3F" firstAttribute="top" secondItem="Zc3-e3-AYl" secondAttribute="top" id="7Hj-ZZ-DJ3"/>
+                <constraint firstItem="ldD-jl-f3F" firstAttribute="trailing" secondItem="ARr-DB-vhd" secondAttribute="trailing" id="Yku-6K-EGk"/>
+                <constraint firstAttribute="bottom" secondItem="ldD-jl-f3F" secondAttribute="bottom" id="ntr-hQ-fXm"/>
+                <constraint firstItem="ldD-jl-f3F" firstAttribute="leading" secondItem="ARr-DB-vhd" secondAttribute="leading" id="qF9-gA-LRY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ARr-DB-vhd"/>
+            <point key="canvasLocation" x="-188.40579710144928" y="61.607142857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-close-black" width="16" height="16"/>
+        <image name="ic-my-location" width="16" height="16"/>
+        <namedColor name="MainText">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
