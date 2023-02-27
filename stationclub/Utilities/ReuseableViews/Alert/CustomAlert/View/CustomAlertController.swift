@@ -49,8 +49,11 @@ class CustomAlertController: PopupViewController {
         lblTitle.text = alertTitle
         lblTitle.isHidden = alertTitle?.isEmpty ?? false
         
-        lblMessage.text = alertMessage
-        lblMessage.isHidden = alertMessage?.isEmpty ?? false
+        if !alertMessage!.isEmpty {
+            lblMessage.text = alertMessage
+        } else {
+            lblMessage.text = "something_went_worng".l()
+        }
         
         viewBackground.setRadius(12)
         btnCancel.setRadius(8)

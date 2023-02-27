@@ -10,10 +10,7 @@ import UIKit
 import CoreLocation
 
 enum Constants {
-    
-//    static let byTheWay = "I'm in love with you."
-    
-    static let defaultCountryCode = "+00"
+    static let defaultCountryCode = "+20"
     
     static let aboutAppUrl = "http://stationclub.com/"
     static let helpUrl = "http://help.stationclub.com/"

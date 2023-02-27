@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInController" customModule="stationclub" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSignIn" destination="1tB-5H-PvF" id="Oxr-ye-H78"/>
+                <outlet property="lblForgetPassword" destination="WLv-TC-oaI" id="UvQ-fG-ze8"/>
+                <outlet property="lblPassword" destination="S1f-bc-aEO" id="piA-k8-pBa"/>
+                <outlet property="lblUsername" destination="tb3-Yf-uKr" id="Omm-80-rgg"/>
+                <outlet property="txtFldPassword" destination="3BT-FN-Cwo" id="zkJ-Es-HrD"/>
+                <outlet property="txtFldUsername" destination="2gF-4h-tY5" id="KiE-rF-EVs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="IYg-K6-Wxk">
+                    <rect key="frame" x="24" y="82.999999999999972" width="345" height="352.33333333333326"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Ed0-7Z-Vui">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="236.33333333333334"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="9SS-7K-3sK">
+                                    <rect key="frame" x="0.0" y="0.0" width="345" height="85.666666666666671"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tb3-Yf-uKr">
+                                            <rect key="frame" x="0.0" y="0.0" width="345" height="21.666666666666668"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" name="MainText"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter_your_username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gF-4h-tY5" customClass="AppTextField" customModule="stationclub" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="33.666666666666671" width="345" height="52"/>
+                                            <color key="backgroundColor" name="Cell"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="tCX-fn-8dm"/>
+                                            </constraints>
+                                            <color key="textColor" name="MainText"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                    <color key="value" name="SubText"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0S9-eU-EAB">
+                                    <rect key="frame" x="0.0" y="109.66666666666666" width="345" height="85.666666666666657"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1f-bc-aEO">
+                                            <rect key="frame" x="0.0" y="0.0" width="345" height="21.666666666666668"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" name="MainText"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter_your_password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3BT-FN-Cwo" customClass="AppTextField" customModule="stationclub" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="33.666666666666686" width="345" height="52"/>
+                                            <color key="backgroundColor" name="Cell"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="EAI-ed-L8d"/>
+                                            </constraints>
+                                            <color key="textColor" name="MainText"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" textContentType="password"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                    <color key="value" name="SubText"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="forget_your_password" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLv-TC-oaI">
+                                    <rect key="frame" x="0.0" y="219.33333333333331" width="345" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <color key="textColor" name="SubText"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tB-5H-PvF" customClass="AppButton" customModule="stationclub" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="300.33333333333331" width="345" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="I5i-Ov-9CI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <color key="tintColor" name="White"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="sign_in"/>
+                            <connections>
+                                <action selector="btnLogInClicked:" destination="-1" eventType="touchUpInside" id="N1O-ao-ODG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Black"/>
+            <constraints>
+                <constraint firstItem="IYg-K6-Wxk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="Pd0-VB-BFI"/>
+                <constraint firstItem="IYg-K6-Wxk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="RRo-uh-oIQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IYg-K6-Wxk" secondAttribute="trailing" constant="24" id="dTe-EF-Pfj"/>
+            </constraints>
+            <point key="canvasLocation" x="25" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Cell">
+            <color red="0.078431372549019607" green="0.078431372549019607" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SubText">
+            <color red="0.40392156862745099" green="0.42352941176470588" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

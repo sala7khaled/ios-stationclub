@@ -28,12 +28,15 @@ class LandingController: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        
+        
+        imgLogo.setRadius()
     }
     
     func setupView() {
         imgBackground.image = UIImage.init(named: Images.landingBackground)
         viewGradient.alpha = 0.85
-        viewGradient.addGradient(colorArray: [.appBlack, .appBlack])
+        viewGradient.addGradient(colors: [.appBlack, .appBlack])
         
         imgLogo.image = UIImage(named: Images.logo)
         lblAppName.text = "app_name".l()
@@ -41,23 +44,23 @@ class LandingController: BaseController {
         btnSignUp.setTitle("sign_up_now")
         btnSignIn.setTitle("sign_in")
         btnSkip.setTitle("skip")
-        btnSkip.setRadius(20)
+        btnSkip.setRadius()
         
     }
     
     
     // MARK:- Events
     
+    @IBAction func btnSkipClicked(_ sender: Any) {
+        presenter.didClickedSkip()
+    }
+    
     @IBAction func btnSignUpClicked(_ sender: Any) {
         presenter.didClickedSignUp()
     }
     
     @IBAction func btnSignInClicked(_ sender: Any) {
-        presenter.didClickedLogIn()
-    }
-    
-    @IBAction func btnSkipClicked(_ sender: Any) {
-        presenter.didClickedSkip()
+        presenter.didClickedSignIn()
     }
     
 }

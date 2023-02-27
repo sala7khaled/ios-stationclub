@@ -18,7 +18,7 @@ class OnboardingRouter: OnboardingRouterInterface {
     
     func presentLanding() {
         let vc = LandingRouter.assembleModule()
-        RootRouter.presentRoot(vc)
+        RootRouter.presentRootNav(with: vc)
     }
     
     static func assembleModule() -> UIViewController {

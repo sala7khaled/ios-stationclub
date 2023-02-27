@@ -16,6 +16,7 @@ class FloatTabBarView: UIView {
 
     weak var delegate: FloatTabBarViewDelegate?
     var buttons: [UIButton] = []
+    var buttonSize: CGFloat = 60
 
     init(_ icons: [String]) {
         super.init(frame: .zero)
@@ -29,38 +30,35 @@ class FloatTabBarView: UIView {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-
-//        layer.backgroundColor = UIColor.tabBar.cgColor
-        setRadius(bounds.height / 3.5)
-        addBlur(alpha: 0.8)
-        addShadow(shadowRadius: bounds.height / 5, color: .subText, offset: .zero, opacity: 0.2)
+        layer.backgroundColor = UIColor.clear.cgColor
+    
+        setRadius(bounds.height / 2.8)
+        addBlur()
+        addShadow(shadowRadius: bounds.height / 3, color: .subText, offset: .zero, opacity: 0.2)
     }
 
     func setupStackView(_ icons: [String]) {
         for (index, icon) in icons.enumerated() {
-            let symbolConfig = UIImage.SymbolConfiguration(pointSize: 20, weight: .bold, scale: .medium)
+            let symbolConfig = UIImage.SymbolConfiguration(pointSize: 18, weight: .medium, scale: .medium)
             let normalIcon = UIImage(systemName: icon, withConfiguration: symbolConfig)
             let selectedIcon = UIImage(systemName: "\(icon).fill", withConfiguration: symbolConfig)
             let button = createButton(normalIcon: normalIcon!, selectedIcon: selectedIcon!, index: index)
             buttons.append(button)
         }
-        
         let stackView = UIStackView(arrangedSubviews: buttons)
         stackView.alignment = .center
         stackView.distribution = .fillEqually
         
         addSubview(stackView)
-        stackView.fillSuperView(padding: .init(top: 0, left: 20, bottom: 0, right: 20))
+        stackView.fillSuperView(padding: .init(top: 0, left: 16, bottom: 0, right: 16))
     }
 
     func createButton(normalIcon: UIImage, selectedIcon: UIImage, index: Int) -> UIButton {
         let button = UIButton()
-        button.constraintWidth(constant: 60)
-        button.constraintHeight(constant: 60)
+        button.constraintHeight(constant: buttonSize)
         button.setImage(normalIcon, for: .normal)
         button.setImage(selectedIcon, for: .selected)
         button.tag = index
-//        button.adjustsImageWhenHighlighted = false
         button.addTarget(self, action: #selector(changeTab(_:)), for: .touchUpInside)
         return button
     }
@@ -69,14 +67,14 @@ class FloatTabBarView: UIView {
         for (index, button) in buttons.enumerated() {
             if index == selectedIndex {
                 button.isSelected = true
-                button.tintColor = .appRed
+                button.tintColor = .appWhite
             } else {
                 button.isSelected = false
-                button.tintColor = .gray
+                button.tintColor = .subText
             }
         }
     }
-    
+
     @objc
     func changeTab(_ sender: UIButton) {
         sender.pulse()

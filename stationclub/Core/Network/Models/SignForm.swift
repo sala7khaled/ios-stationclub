@@ -10,7 +10,7 @@ import Foundation
 
 struct SignForm: Codable {
     
-    var email: String
+    var username: String
     var password: String
 }
 
@@ -18,7 +18,7 @@ extension SignForm {
     
     enum CodingKeys: String, CodingKey {
         
-        case email
+        case username
         case password
     }
 }

@@ -17,8 +17,12 @@ class OnboardingPresenter: OnboardingPresenterInterface {
     
 extension OnboardingPresenter: OnboardingInteractorOutput {
     
-    func didClickLanguage() {
+    func didClickedLanguage() {
         router.presentChangeLanguageAlert()
+    }
+    
+    func didClickedSkip() {
+        router.presentLanding()
     }
     
     func didClickedGetStarted() {

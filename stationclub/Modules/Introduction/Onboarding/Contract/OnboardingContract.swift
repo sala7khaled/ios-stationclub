@@ -17,7 +17,8 @@ protocol OnboardingPresenterInterface: AnyObject {
     var router: OnboardingRouterInterface! { get set }
     var interactor: OnboardingInteractorInterface! { get set }
     
-    func didClickLanguage()
+    func didClickedLanguage()
+    func didClickedSkip()
     func didClickedGetStarted()
 }
 

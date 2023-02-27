@@ -126,19 +126,23 @@ class URLSessionProvider: URLSessionProviderProtocol {
     
     // MARK: General Function To Log API Info
     
-    func info(_ task: URLSessionDataTask, _ body: Any?, _ data: Data?, _ response: URLResponse?, _ error: Error?) {
+    func info(_ task: URLSessionDataTask, _ httpBody: Data?, _ data: Data?, _ response: URLResponse?, _ error: Error?) {
         let url: String = task.originalRequest?.url?.absoluteString ?? ""
         let headers: [String: String] = task.originalRequest?.allHTTPHeaderFields ?? [:]
+        let body: String = {
+            return httpBody != nil ? NSString(data: httpBody!, encoding: String.Encoding.utf8.rawValue)! as String : "No body"
+        }()
         let statusCode: Int = (task.response as? HTTPURLResponse)?.statusCode ?? 0
         let response: String = String(data: data ?? Data(), encoding: .utf8) ?? ""
-        Console.logAPI(url, headers, body as Any, statusCode, response, error)
+        
+        Console.logAPI(url, headers, body, statusCode, response, error)
     }
     
     // MARK: Unauthenticate User
     
     func unauthenticate() {
         DispatchQueue.main.async {
-            UsersRepo().logOut()
+            UserRepo().logOut()
             RootRouter.resetApp()
         }
     }

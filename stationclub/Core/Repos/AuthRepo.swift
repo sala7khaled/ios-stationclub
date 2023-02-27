@@ -27,12 +27,12 @@ class AuthRepo: Repo {
 //        }
 //    }
 //
-    func login(signForm: SignForm, _ completion: @escaping (APIResponse<AuthResponse>) -> ()) {
-        provider.request(type: AuthResponse.self, service: Api.Auth.login(signForm: signForm)) { response in
+    func login(signForm: SignForm, _ completion: @escaping (APIResponse<User>) -> ()) {
+        provider.request(type: User.self, service: Api.Auth.login(signForm: signForm)) { response in
             switch (response) {
             case let .onSuccess(response):
-                let token: String = response.accessToken
-                UsersRepo().storeToken(token: token)
+                let token: String = response.token
+                UserRepo().storeToken(token: token)
                 completion(.onSuccess(response))
             case let .onFailure(error):
                 completion(.onFailure(error))

@@ -34,7 +34,7 @@ extension URLRequest {
             addValue(build, forHTTPHeaderField: APIHeader.build)
         }
         
-        if let token = UsersRepo().local.get()?.accessToken {
+        if let token = UserRepo().local.get()?.token {
             addValue("Bearer \(token)", forHTTPHeaderField: APIHeader.authorization)
         }
         

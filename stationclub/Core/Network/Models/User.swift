@@ -12,29 +12,35 @@ import Foundation
 
 class User: NSObject, NSCoding, Codable {
     
+    var id: Int
+    var username: String
+    var email: String
     var firstName: String
     var lastName: String
-    var phone: String
-    var avatar: String?
-    var isVerified: Bool?
-    var accessToken: String?
+    var gender: String
+    var image: String
+    var token: String
     
     func encode(with coder: NSCoder) {
-        coder.encode(firstName, forKey: "first_name")
-        coder.encode(lastName, forKey: "last_name")
-        coder.encode(phone, forKey: "phone")
-        coder.encode(avatar, forKey: "avatar")
-        coder.encode(isVerified, forKey: "is_verified")
-        coder.encode(accessToken, forKey: "access_token")
+        coder.encode(id, forKey: CodingKeys.id.rawValue)
+        coder.encode(username, forKey: CodingKeys.username.rawValue)
+        coder.encode(email, forKey: CodingKeys.email.rawValue)
+        coder.encode(firstName, forKey: CodingKeys.firstName.rawValue)
+        coder.encode(lastName, forKey: CodingKeys.lastName.rawValue)
+        coder.encode(gender, forKey: CodingKeys.gender.rawValue)
+        coder.encode(image, forKey: CodingKeys.image.rawValue)
+        coder.encode(token, forKey: CodingKeys.token.rawValue)
     }
     
     required init?(coder: NSCoder) {
-        self.firstName = coder.decodeObject(forKey: "first_name") as? String ?? ""
-        self.lastName = coder.decodeObject(forKey: "last_name") as? String ?? ""
-        self.phone = coder.decodeObject(forKey: "phone") as? String ?? ""
-        self.avatar = coder.decodeObject(forKey: "avatar") as? String
-        self.isVerified = coder.decodeObject(forKey: "is_verified") as? Bool ?? false
-        self.accessToken = coder.decodeObject(forKey: "access_token") as? String
+        self.id = Int(coder.decodeInt64(forKey: CodingKeys.id.rawValue))
+        self.username = coder.decodeObject(forKey: CodingKeys.username.rawValue) as? String ?? ""
+        self.email = coder.decodeObject(forKey: CodingKeys.email.rawValue) as? String ?? ""
+        self.firstName = coder.decodeObject(forKey: CodingKeys.firstName.rawValue) as? String ?? ""
+        self.lastName = coder.decodeObject(forKey: CodingKeys.lastName.rawValue) as? String ?? ""
+        self.gender = coder.decodeObject(forKey: CodingKeys.gender.rawValue) as? String ?? ""
+        self.image = coder.decodeObject(forKey: CodingKeys.image.rawValue) as? String ?? ""
+        self.token = coder.decodeObject(forKey: CodingKeys.token.rawValue) as? String ?? ""
     }
 }
 
@@ -42,12 +48,14 @@ extension User {
     
     enum CodingKeys: String, CodingKey {
         
-        case firstName = "first_name"
-        case lastName = "last_name"
-        case phone
-        case avatar
-        case isVerified = "is_verified"
-        case accessToken = "access_token"
+        case id
+        case username
+        case email
+        case firstName
+        case lastName
+        case gender
+        case image
+        case token
     }
 }
 
@@ -70,3 +78,5 @@ extension DeviceForm {
         case deviceType = "device_type"
     }
 }
+
+

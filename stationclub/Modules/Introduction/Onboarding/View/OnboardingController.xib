@@ -10,9 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingController" customModule="stationclub" customModuleProvider="target">
             <connections>
-                <outlet property="btnChangeLanguage" destination="JGC-0u-TqI" id="Pxv-g3-F1t"/>
+                <outlet property="btnChangeLanguage" destination="TBX-ai-Qm5" id="0Zt-i9-fvg"/>
                 <outlet property="btnNext" destination="aUC-i5-adZ" id="Kgo-n0-DGp"/>
                 <outlet property="btnNextWidth" destination="vrD-zn-fyw" id="nX4-bN-FWG"/>
+                <outlet property="btnSkip" destination="yyj-li-Kv8" id="Pmb-FQ-ofE"/>
                 <outlet property="collectionView" destination="4qi-ma-npu" id="RB2-KY-gt2"/>
                 <outlet property="pageControl" destination="LXg-tc-4Kh" id="S4U-rg-jKD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -57,18 +58,29 @@
                 <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LXg-tc-4Kh">
                     <rect key="frame" x="24" y="722" width="366" height="0.0"/>
                 </pageControl>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGC-0u-TqI" customClass="AccentButton" customModule="stationclub" customModuleProvider="target">
-                    <rect key="frame" x="168.5" y="72" width="77" height="40"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBX-ai-Qm5" customClass="AccentButton" customModule="stationclub" customModuleProvider="target">
+                    <rect key="frame" x="24" y="72" width="41.5" height="41.5"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="shh-yF-UaY"/>
+                        <constraint firstAttribute="width" secondItem="TBX-ai-Qm5" secondAttribute="height" multiplier="1:1" id="337-Cz-Plq"/>
                     </constraints>
                     <color key="tintColor" name="White"/>
-                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="14" maxY="0.0"/>
-                    <state key="normal" title="language">
-                        <color key="titleColor" name="MainText"/>
-                    </state>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="ic-language"/>
                     <connections>
-                        <action selector="btnChnageLanguageClicked:" destination="-1" eventType="touchUpInside" id="yik-nL-RwE"/>
+                        <action selector="btnChnageLanguageClicked:" destination="-1" eventType="touchUpInside" id="vJD-9b-cHz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyj-li-Kv8" customClass="AccentButton" customModule="stationclub" customModuleProvider="target">
+                    <rect key="frame" x="307" y="72" width="83" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="VmK-ju-iDv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="tintColor" name="White"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="skip"/>
+                    <connections>
+                        <action selector="btnSkipClicked:" destination="-1" eventType="touchUpInside" id="xdb-aM-5eL"/>
                     </connections>
                 </button>
             </subviews>
@@ -76,27 +88,32 @@
             <color key="backgroundColor" name="Black"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="X8m-gM-Vbd" secondAttribute="trailing" id="4ge-q3-eof"/>
-                <constraint firstItem="JGC-0u-TqI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4ws-hf-ivR"/>
                 <constraint firstItem="4qi-ma-npu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5Qd-Ve-P3f"/>
                 <constraint firstItem="X8m-gM-Vbd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8Kh-Kp-6qf"/>
                 <constraint firstItem="LXg-tc-4Kh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9p2-y8-hF6"/>
+                <constraint firstItem="TBX-ai-Qm5" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.1" id="CgN-bC-yGF"/>
                 <constraint firstItem="aUC-i5-adZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DgW-NW-wdp"/>
+                <constraint firstItem="yyj-li-Kv8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="JaY-iX-hST"/>
                 <constraint firstItem="X8m-gM-Vbd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MqU-ZV-MPl"/>
+                <constraint firstItem="yyj-li-Kv8" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.2" id="Plr-GY-ytI"/>
+                <constraint firstItem="TBX-ai-Qm5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="S8N-Xx-gp7"/>
                 <constraint firstAttribute="trailing" secondItem="4qi-ma-npu" secondAttribute="trailing" id="XAr-sq-LAk"/>
                 <constraint firstItem="4qi-ma-npu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YGD-sE-FL0"/>
                 <constraint firstItem="LXg-tc-4Kh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="Z0O-eL-Bxn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LXg-tc-4Kh" secondAttribute="trailing" constant="24" id="dpC-4M-kNe"/>
                 <constraint firstAttribute="bottom" secondItem="X8m-gM-Vbd" secondAttribute="bottom" id="fFU-Hj-U3p"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yyj-li-Kv8" secondAttribute="trailing" constant="24" id="fyt-2D-yE4"/>
+                <constraint firstItem="TBX-ai-Qm5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="hwc-Wu-Nes"/>
                 <constraint firstItem="aUC-i5-adZ" firstAttribute="top" secondItem="LXg-tc-4Kh" secondAttribute="bottom" constant="24" id="kkB-ej-Wui"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aUC-i5-adZ" secondAttribute="bottom" constant="64" id="qGW-89-3kP"/>
                 <constraint firstAttribute="bottom" secondItem="4qi-ma-npu" secondAttribute="bottom" id="t46-gL-xYX"/>
-                <constraint firstItem="JGC-0u-TqI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="wbm-mc-Bax"/>
                 <constraint firstItem="4qi-ma-npu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="wgJ-Pr-4Nw"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
         </view>
     </objects>
     <resources>
+        <image name="ic-language" width="22" height="22"/>
         <namedColor name="Black">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

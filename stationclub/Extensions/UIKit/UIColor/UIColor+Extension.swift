@@ -12,12 +12,12 @@ extension UIColor {
 
     static let appWhite = UIColor(hex: 0xFFFFFF)
     static let appBlack = UIColor(hex: 0x000000)
-    static let appCell = UIColor(hex: 0x141418)
+    static let appCell = UIColor(hex: 0x131519)
     
     static let primary = UIColor(hex: 0x6063CC)
     static let appRed = UIColor(hex: 0xDF4076)
     static let appBlue = UIColor(hex: 0x3489E5)
-    static let appGreen = UIColor(hex: 0x89E49D)
+    static let appGreen = UIColor(hex: 0x4AC067)
     static let appYellow = UIColor(hex: 0xFAC359)
     
     static let mainText = UIColor(hex: 0xFFFFFF)
@@ -26,8 +26,6 @@ extension UIColor {
     static let border = UIColor(hex: 0x404040, a: 0.8)
     
     static let transparent = UIColor(hex: 0xFFFFFF, a: 0.05)
-    
-    static let tabBar = UIColor(hex: 0x27272B)
     
     convenience init(red: Int, green: Int, blue: Int, a: CGFloat = 1.0) {
         self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: a)

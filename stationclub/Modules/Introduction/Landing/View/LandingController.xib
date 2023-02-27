@@ -43,7 +43,7 @@
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="skip"/>
                     <connections>
-                        <action selector="btnSkipClicked:" destination="-1" eventType="touchUpInside" id="ddN-2G-dcH"/>
+                        <action selector="btnSkipClicked:" destination="-1" eventType="touchUpInside" id="WYV-fR-O3g"/>
                     </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="50s-1h-3Yx">
@@ -89,7 +89,7 @@
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="sign_up_now"/>
                                     <connections>
-                                        <action selector="btnSignUpClicked:" destination="-1" eventType="touchUpInside" id="PPc-f1-awT"/>
+                                        <action selector="btnSignUpClicked:" destination="-1" eventType="touchUpInside" id="XhV-yt-k5s"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpW-5C-tnd" customClass="AccentButton" customModule="stationclub" customModuleProvider="target">
@@ -101,7 +101,7 @@
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="sign_in"/>
                                     <connections>
-                                        <action selector="btnSignInClicked:" destination="-1" eventType="touchUpInside" id="7kM-9m-kF3"/>
+                                        <action selector="btnSignInClicked:" destination="-1" eventType="touchUpInside" id="KZb-Ou-B7Q"/>
                                     </connections>
                                 </button>
                             </subviews>

@@ -84,32 +84,29 @@ extension UIView {
         }
     }
     
-    func addGradient(colorArray: [UIColor], type: CAGradientLayerType! = .axial) {
-                
+    func addGradient(colors: [UIColor], type: CAGradientLayerType! = .axial) {
         layer.sublayers?.filter({ $0 is CAGradientLayer }).forEach({ $0.removeFromSuperlayer() })
-        
         let gradientLayer = CAGradientLayer()
         gradientLayer.type = type
-        gradientLayer.colors = colorArray.map({ $0.cgColor })
+        gradientLayer.colors = colors.map({ $0.cgColor })
         
 //        gradientLayer.startPoint = CGPoint(x: 100, y: 100)
 //        gradientLayer.endPoint = CGPoint(x: self.bounds.width, y: self.bounds.height)
         
-        var rec: CGRect = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        let rec: CGRect = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         gradientLayer.frame =  rec
 
-        
         layer.insertSublayer(gradientLayer, at: 0)
     }
     
-    func addBlur(index: Int = 0, style: UIBlurEffect.Style = .systemThickMaterialDark, alpha: CGFloat = 0.5) {
+    func addBlur(index: Int = 0, style: UIBlurEffect.Style = .dark, alpha: CGFloat = 1) {
         let blurView = UIVisualEffectView(effect: UIBlurEffect(style: style))
-        blurView.frame = self.bounds
         blurView.alpha = alpha
         blurView.setRadius(layer.cornerRadius)
         insertSubview(blurView, at: index)
+        fillView(blurView, in: self)
+        
     }
-
     
     @objc
     func viewLongTap(_ gesture: UILongPressGestureRecognizer) {
@@ -197,6 +194,19 @@ extension UIView {
         if let superviewTrailingAnchor = superview?.trailingAnchor {
             trailingAnchor.constraint(equalTo: superviewTrailingAnchor, constant: -padding.right).isActive = true
         }
+    }
+    
+    private func fillView(_ view: UIView, in parent: UIView) {
+        view.translatesAutoresizingMaskIntoConstraints = false
+            
+        NSLayoutConstraint.activate(
+            [
+                view.leadingAnchor.constraint(equalTo: parent.leadingAnchor),
+                view.trailingAnchor.constraint(equalTo: parent.trailingAnchor),
+                view.widthAnchor.constraint(equalTo: parent.widthAnchor),
+                view.heightAnchor.constraint(equalTo: parent.heightAnchor)
+            ]
+        )
     }
 
     func centerInSuperView(size: CGSize = .zero) {

@@ -14,7 +14,7 @@ class LandingRouter: LandingRouterInterface {
     
     
     func presentHome() {
-        
+        RootRouter.presentRootTab()
     }
     
     func presentSignUp() {
@@ -22,8 +22,8 @@ class LandingRouter: LandingRouterInterface {
     }
     
     func presentSignIn() {
-//        let vc = SignInRouter.assembleModule()
-//        RootRouter.pushVC(vc, in: viewController!)
+        let vc = SignInRouter.assembleModule()
+        RootRouter.pushVC(vc, in: viewController!)
     }
     
     static func assembleModule() -> UIViewController {

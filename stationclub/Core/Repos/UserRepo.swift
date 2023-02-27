@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UsersRepo: Repo {
+class UserRepo: Repo {
     
     var local = UserKeyChain()
     
@@ -20,12 +20,12 @@ class UsersRepo: Repo {
         local.saveToken(token: token)
     }
     
-    func verify() {
-        if let user = local.get() {
-            user.isVerified = true
-            store(user: user)
-        }
-    }
+//    func verify() {
+//        if let user = local.get() {
+//            user.isVerified = true
+//            store(user: user)
+//        }
+//    }
     
     func logOut() {
         local.logOut()

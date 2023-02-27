@@ -14,6 +14,8 @@ class OnboardingController: BaseController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var btnNext: AppButton!
     @IBOutlet weak var btnChangeLanguage: AccentButton!
+    @IBOutlet weak var btnSkip: AccentButton!
+    
     @IBOutlet weak var btnNextWidth: NSLayoutConstraint!
     @IBOutlet weak var viewGradient: UIView!
     
@@ -59,24 +61,23 @@ class OnboardingController: BaseController {
         .primary,
         .appBlue
     ]
-            
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            setupViews()
-            initCollectionView()
-        }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupViews()
+        initCollectionView()
+    }
     
     func setupViews() {
         setupData()
         morphCircleButtom()
         
-        btnChangeLanguage.setTitle("language")
-        btnChangeLanguage.setImage(UIImage.init(named: Images.language), for: .normal)
-        btnChangeLanguage.setRadius(20)
-        btnChangeLanguage.setInsets()
+        btnChangeLanguage.setRadius()
+        btnSkip.setRadius()
+        btnSkip.setTitle("skip")
         
         viewGradient.alpha = 0.2
-        viewGradient.addGradient(colorArray: [onboardList[currentPage].color, .appBlack])
+        viewGradient.addGradient(colors: [onboardList[currentPage].color, .appBlack])
         
         pageControl.numberOfPages = Images.onboarding.count
     }
@@ -97,7 +98,6 @@ class OnboardingController: BaseController {
     // MARK: - Events
     
     @IBAction func btnNextClicked(_ sender: Any) {
-        
         if currentPage == onboardList.count - 1 {
             presenter.didClickedGetStarted()
         } else {
@@ -108,12 +108,16 @@ class OnboardingController: BaseController {
     }
     
     @IBAction func btnChnageLanguageClicked(_ sender: Any) {
-        presenter.didClickLanguage()
+        presenter.didClickedLanguage()
+    }
+    
+    @IBAction func btnSkipClicked(_ sender: Any) {
+        presenter.didClickedSkip()
     }
     
 }
 
-    // MARK: - Buttons
+// MARK: - Buttons
 
 extension OnboardingController {
     
@@ -125,7 +129,7 @@ extension OnboardingController {
                 self.btnNext.setImage(nil, for: .normal)
             })
         })
-
+        
     }
     
     func morphCircleButtom() {
@@ -141,7 +145,7 @@ extension OnboardingController {
     
 }
 
-    // MARK: - Gradient
+// MARK: - Gradient
 
 extension OnboardingController {
     
@@ -149,14 +153,14 @@ extension OnboardingController {
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now(), execute: { () -> Void in
             UIView.animate(withDuration: 3, animations: { () -> Void in
-
+                
                 self.viewGradient.alpha = 0.1
-
+                
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now(), execute: { () -> Void in
                     UIView.animate(withDuration: 2, animations: { () -> Void in
-
+                        
                         self.viewGradient.alpha = 0.2
-                        self.viewGradient.addGradient(colorArray: [color, .appBlack])
+                        self.viewGradient.addGradient(colors: [color, .appBlack])
                     })
                 })
             })
@@ -166,5 +170,5 @@ extension OnboardingController {
 }
 
 extension OnboardingController: OnboardingView {
-
+    
 }

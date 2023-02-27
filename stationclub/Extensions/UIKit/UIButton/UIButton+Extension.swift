@@ -35,7 +35,7 @@ extension UIButton {
         layer.add(pulse, forKey: "pulse")
     }
     
-    func setInsets (top: CGFloat = 0, leading: CGFloat = 14, bottom: CGFloat = 0, trailing: CGFloat = 14, imagePadding: CGFloat = 12 ) {
+    func setInsets (top: CGFloat = 0, leading: CGFloat = 14, bottom: CGFloat = 0, trailing: CGFloat = 14, imagePadding: CGFloat = 0 ) {
         
         let contentPadding = UIEdgeInsets(top: top, left: leading, bottom: bottom, right: trailing)
         

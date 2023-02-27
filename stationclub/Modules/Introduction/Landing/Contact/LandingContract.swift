@@ -17,9 +17,9 @@ protocol LandingPresenterInterface: AnyObject {
     var router: LandingRouterInterface! { get set }
     var interactor: LandingInteractorInterface! { get set }
     
-    func didClickedSignUp()
-    func didClickedLogIn()
     func didClickedSkip()
+    func didClickedSignUp()
+    func didClickedSignIn()
 }
 
 protocol LandingInteractorInterface: AnyObject {

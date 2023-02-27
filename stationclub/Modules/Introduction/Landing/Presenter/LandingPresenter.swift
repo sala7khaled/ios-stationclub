@@ -17,15 +17,15 @@ class LandingPresenter: LandingPresenterInterface {
     
 extension LandingPresenter: LandingInteractorOutput {
     
-    func didClickedSignUp() {
-        router.presentSignUp()
-    }
-    
     func didClickedSkip() {
         router.presentHome()
     }
     
-    func didClickedLogIn() {
+    func didClickedSignUp() {
+        router.presentSignUp()
+    }
+    
+    func didClickedSignIn() {
         router.presentSignIn()
     }
 }

@@ -29,9 +29,6 @@ class RootRouter {
     }
     
     static func presentRoot(_ vc: UIViewController) {
-//        let window = UIApplication.shared.windows.filter { $0.isKeyWindow }.first
-//        window?.makeKeyAndVisible()
-//        window?.rootViewController = vc
         let window = UIApplication
             .shared
             .connectedScenes

@@ -32,11 +32,11 @@ final class Api {
     var baseUrl: String {
         switch config {
         case .development:
-            return "https://lms-doctoroid.herokuapp.com/"
+            return "https://dummyjson.com/"
         case .stage:
-            return "https://lms-doctoroid.herokuapp.com/"
+            return "https://dummyjson.com/"
         case .production:
-            return "https://lms-doctoroid.herokuapp.com/"
+            return "https://dummyjson.com/"
         }
     }
     
@@ -47,7 +47,7 @@ final class Api {
     // MARK: - AUTH
     
     let SERVICE_AUTH_REGSITER = "register"
-    let SERVICE_AUTH_LOGIN = "signin"
+    let SERVICE_AUTH_LOGIN = "auth/login"
     let SERVICE_AUTH_VERIFY = "verify"
     let SERVICE_AUTH_SIGN_OUT = "logout"
     let SERVICE_AUTH_PROFILE = "profile"

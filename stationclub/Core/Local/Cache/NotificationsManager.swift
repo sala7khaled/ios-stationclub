@@ -43,7 +43,7 @@ class NotificationsManager {
 //    }
     
     func post(_ has: Bool) {
-        if UsersRepo().local.isExist() {
+        if UserRepo().local.isExist() {
             NotificationCenter.default.post(
                 name: Notification.Name("HAS_NEW_NOTIFICATIONS"),
                 object: nil,

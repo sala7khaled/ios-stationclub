@@ -16,11 +16,12 @@ class SplashPresenter: SplashPresenterInterface {
     
     func viewDidLoad() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            if UsersRepo().local.isExist() && UsersRepo().local.get()?.isVerified == false {
-                UsersRepo().local.logOut()
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                self.router.presentOnboarding()
+            if UserRepo().local.isExist(){
+                self.router.presentHome()
+            } else {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self.router.presentOnboarding()
+                }
             }
         }
     }
