@@ -58,25 +58,3 @@ extension User {
         case token
     }
 }
-
-// MARK: - DeviceForm
-
-struct DeviceForm: Codable {
-    
-    let deviceId: String
-    let deviceToken: String
-    let deviceType: String
-}
-
-
-extension DeviceForm {
-    
-    enum CodingKeys: String, CodingKey {
-        
-        case deviceId = "device_id"
-        case deviceToken = "device_token"
-        case deviceType = "device_type"
-    }
-}
-
-
