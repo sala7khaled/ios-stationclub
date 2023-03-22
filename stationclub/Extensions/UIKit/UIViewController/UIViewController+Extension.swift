@@ -58,19 +58,12 @@ extension UIViewController {
                                             action: .two,
                                             title: "change_language_title".l(),
                                           message: "change_language_message".l(),
-                                            buttonTitle: "change".l()) { _ in
-            Localization.shared.switchLanguage()
+                                            buttonTitle: "change".l()) { didConfirm in
+            if didConfirm {
+                Localization.shared.switchLanguage()
+            }
         }
         present(alert)
-        
-//        AlertController.shared.show(in: self,
-//                                    title: "change_language".l(),
-//                                    message: Localization.shared.currentLanguage() == .English ? "change_language_to_arabic".l() : "change_language_to_english".l(),
-//                                    btnTitle: "ok".l(),
-//                                    withCancel: true,
-//                                    style: .actionSheet) { _ in
-//            Localization.shared.switchLanguage()
-//        }
     }
     
     public func addActionSheetForIpad(actionSheet: UIAlertController) {

@@ -101,6 +101,7 @@ class CustomAlertController: PopupViewController {
     }
     
     @IBAction func cancel(_ sender: Any) {
+        completion(false)
         dismiss(animated: true)
     }
     

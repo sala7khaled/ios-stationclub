@@ -138,7 +138,6 @@ extension OnboardingController {
                 self.btnNext.setTitle("")
                 self.btnNextWidth.constant = self.btnNext.frame.height
                 self.btnNext.setImage(UIImage.init(named: Images.nextArrow), for: .normal)
-                self.btnNext.imageView?.tintColor = .appWhite
             })
         })
     }

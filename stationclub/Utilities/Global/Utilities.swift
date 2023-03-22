@@ -14,9 +14,9 @@ class Utilities {
         UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
     }
     
-    static func openUrl(_ urlStr: String) {
-        if let url = URL(string: urlStr) {
-            UIApplication.shared.open(url)
+    static func openUrl(url: String) {
+        if let safeUrl = URL(string: url) {
+            UIApplication.shared.open(safeUrl)
         }
     }
     

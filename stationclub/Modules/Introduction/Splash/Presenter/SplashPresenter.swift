@@ -15,7 +15,7 @@ class SplashPresenter: SplashPresenterInterface {
     var interactor: SplashInteractorInterface!
     
     func viewDidLoad() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             if UserRepo().local.isExist(){
                 self.router.presentHome()
             } else {

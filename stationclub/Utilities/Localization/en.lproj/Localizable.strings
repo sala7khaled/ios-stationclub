@@ -67,6 +67,7 @@
 // MARK: HOME
 
 "home" = "Home";
+"join" = "Join";
 "favourites" = "Favourites";
 "notifications" = "Notifications";
 "profile" = "Profile";

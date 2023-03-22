@@ -35,7 +35,7 @@ class AppTextField: UITextField {
     }
     
     private func configure() {
-        layer.cornerRadius = 6
+        layer.cornerRadius = 8
         layer.borderWidth = 1
         layer.borderColor = borderColor
         clipsToBounds = true
@@ -77,6 +77,8 @@ extension AppTextField {
     
     func enablePasswordToggle() {
         let button = UIButton(type: .custom)
+        
+        self.isSecureTextEntry = true
         setPasswordToggleImage(button)
         button.setInsets(top: 0, leading: 0, bottom: 0, trailing: 0, imagePadding: 18)
         

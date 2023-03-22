@@ -105,7 +105,6 @@ extension UIView {
         blurView.setRadius(layer.cornerRadius)
         insertSubview(blurView, at: index)
         fillView(blurView, in: self)
-        
     }
     
     @objc

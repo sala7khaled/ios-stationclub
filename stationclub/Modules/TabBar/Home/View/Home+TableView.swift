@@ -12,7 +12,7 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
     
     
     func initTableView() {
-        tableView.initialize(cellClass: FeaturedCell.self, delegate: self, dataSource: self, estimatedRowHeight: 390)
+        tableView.initialize(cellClass: FeaturedCell.self, delegate: self, dataSource: self, estimatedRowHeight: 400)
         tableView.contentInsetAdjustmentBehavior = .never
         tableView.contentInset.bottom = 112
         
@@ -46,11 +46,11 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
-            return 390
+            return 400
         case 1:
             return 44
         default:
-            return 190
+            return 160
         }
     }
 

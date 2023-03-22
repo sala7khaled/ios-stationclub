@@ -30,7 +30,7 @@ class FloatTabBarView: UIView {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        layer.backgroundColor = UIColor.clear.cgColor
+        layer.backgroundColor = UIColor.appBlack.cgColor
     
         setRadius(bounds.height / 2.8)
         addBlur()

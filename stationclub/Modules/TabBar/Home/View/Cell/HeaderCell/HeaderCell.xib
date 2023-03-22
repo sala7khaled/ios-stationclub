@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbH-Ed-chc">
-                        <rect key="frame" x="23.999999999999996" y="12" width="39.666666666666657" height="30"/>
+                        <rect key="frame" x="23.999999999999996" y="12" width="39.666666666666657" height="32"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" name="SubText"/>
                         <nil key="highlightedColor"/>
@@ -27,7 +27,7 @@
                 <color key="backgroundColor" name="Black"/>
                 <constraints>
                     <constraint firstItem="GbH-Ed-chc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="R7M-5b-hap"/>
-                    <constraint firstAttribute="bottom" secondItem="GbH-Ed-chc" secondAttribute="bottom" constant="2" id="dgr-To-drr"/>
+                    <constraint firstAttribute="bottom" secondItem="GbH-Ed-chc" secondAttribute="bottom" id="dgr-To-drr"/>
                     <constraint firstItem="GbH-Ed-chc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="gNM-6Q-Vc1"/>
                 </constraints>
             </tableViewCellContentView>
@@ -44,7 +44,7 @@
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="SubText">
-            <color red="0.40392156862745099" green="0.42352941176470588" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

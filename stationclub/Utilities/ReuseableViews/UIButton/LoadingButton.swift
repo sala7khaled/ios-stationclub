@@ -15,8 +15,8 @@ class LoadingButton: UIButton {
     
     func configure(radius: CGFloat = Constants.buttonCornerRadius,
                    textFont: UIFont = .mediumFont(ofSize: 15),
-                   textColor: UIColor = .mainText,
-                   backColor: UIColor = .primary,
+                   textColor: UIColor = .appBlack,
+                   backColor: UIColor = .appWhite,
                    borderColor: UIColor? = nil) {
         
         titleLabel?.font = textFont
@@ -61,7 +61,7 @@ class LoadingButton: UIButton {
     private func createActivityIndicator() -> UIActivityIndicatorView {
         let activityIndicator = UIActivityIndicatorView()
         activityIndicator.hidesWhenStopped = true
-        activityIndicator.color = .appWhite
+        activityIndicator.color = .appBlack
         return activityIndicator
     }
     

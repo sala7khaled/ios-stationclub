@@ -12,16 +12,17 @@ extension UIColor {
 
     static let appWhite = UIColor(hex: 0xFFFFFF)
     static let appBlack = UIColor(hex: 0x000000)
-    static let appCell = UIColor(hex: 0x131519)
+    static let appCell = UIColor(hex: 0x141414)
     
     static let primary = UIColor(hex: 0x6063CC)
     static let appRed = UIColor(hex: 0xDF4076)
     static let appBlue = UIColor(hex: 0x3489E5)
+    static let appCyan = UIColor(hex: 0xAAEEC4)
     static let appGreen = UIColor(hex: 0x4AC067)
     static let appYellow = UIColor(hex: 0xFAC359)
     
     static let mainText = UIColor(hex: 0xFFFFFF)
-    static let subText = UIColor(hex: 0x676C7B)
+    static let subText = UIColor(hex: 0x999999)
     
     static let border = UIColor(hex: 0x404040, a: 0.8)
     

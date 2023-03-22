@@ -10,18 +10,17 @@ import UIKit
 
 class FeaturedCell: UITableViewCell {
     
+    @IBOutlet weak var viewKind: UIView!
+    @IBOutlet weak var lblKind: UILabel!
     
     @IBOutlet weak var imgCover: UIImageView!
     @IBOutlet weak var imgHostAvatar: UIImageView!
-    @IBOutlet weak var imgStationLogo: UIImageView!
     
     @IBOutlet weak var lblHostName: UILabel!
+    @IBOutlet weak var lblListenCount: UILabel!
     @IBOutlet weak var lblPodcastTitle: UILabel!
-    @IBOutlet weak var lblStationName: UILabel!
-    @IBOutlet weak var lblListenerCount: UILabel!
     
-    @IBOutlet weak var btnPlay: UIButton!
-    
+    @IBOutlet weak var btnPlay: AppButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,23 +29,27 @@ class FeaturedCell: UITableViewCell {
     
     func setupView() {
         
-//        imgCover.addBlur(style: .systemThickMaterialDark, alpha: 0.5)
-        imgCover.addGradient(colors: [.clear, .appBlack , .appBlack, .appBlack])
+        viewKind.setRadius(viewKind.bounds.height / 4)
+        viewKind.backgroundColor = UIColor(hex: 0x000000, a: 0.2)
+        lblKind.text = "Podcast"
         
-        imgStationLogo.setRadius(imgStationLogo.frame.height / 10)
+        imgCover.addGradient(colors: [.clear, .appBlack , .appBlack, .appBlack])
         imgHostAvatar.oval()
+
+        btnPlay.setTitle("join")
         btnPlay.oval()
+        btnPlay.backgroundColor = .appWhite
+        btnPlay.setTitleColor(.black, for: .normal)
+        btnPlay.setInsets(imagePadding: 12)
     }
 
     func configure(with station: Station) {
         imgCover.loadImage(url: station.cover)
         imgHostAvatar.loadImage(url: station.hostAvatar)
-        imgStationLogo.loadImage(url: station.stationImage)
         
-        lblHostName.text = station.hostName
         lblPodcastTitle.text = station.podcastTitle
-        lblStationName.text = station.stationName
-        lblListenerCount.text = station.listenCount
+        lblHostName.text = station.hostName
+        lblListenCount.text = station.listenCount
     }
     
 }

@@ -44,7 +44,7 @@ class FloatTabBarController: UITabBarController {
     
     func setupData() {
         tabBar.isHidden = true
-        view.backgroundColor = .appBlack
+        view.backgroundColor = .clear
         
         height = view.bounds.height * 0.09
         margin = 20

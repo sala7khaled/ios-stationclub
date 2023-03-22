@@ -41,13 +41,12 @@
                 </collectionView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUC-i5-adZ" customClass="AppButton" customModule="stationclub" customModuleProvider="target">
                     <rect key="frame" x="181" y="746" width="52" height="52"/>
-                    <color key="backgroundColor" name="Primary"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="52" id="JF9-Po-gL4"/>
                         <constraint firstAttribute="width" constant="52" id="vrD-zn-fyw"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" name="Black"/>
                     <state key="normal" title="Get started">
                         <color key="titleColor" name="MainText"/>
                     </state>
@@ -119,9 +118,6 @@
         </namedColor>
         <namedColor name="MainText">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Primary">
-            <color red="0.37647058823529411" green="0.38823529411764707" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

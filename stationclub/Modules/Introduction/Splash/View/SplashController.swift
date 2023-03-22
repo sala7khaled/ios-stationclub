@@ -33,7 +33,6 @@ class SplashController: UIViewController {
         spinner.startAnimating()
         imgLogo.image = UIImage.init(named: Images.appLogo)
         viewBackground.image = UIImage.init(named: Images.splash)
-        viewBackground.addBlur()
         lblCopyright.text = "copy_right".l()
     }
     

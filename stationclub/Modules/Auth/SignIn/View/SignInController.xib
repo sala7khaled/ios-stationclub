@@ -25,13 +25,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="IYg-K6-Wxk">
-                    <rect key="frame" x="24" y="82.999999999999972" width="345" height="352.33333333333326"/>
+                    <rect key="frame" x="24" y="83" width="345" height="344.33333333333337"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Ed0-7Z-Vui">
-                            <rect key="frame" x="0.0" y="0.0" width="345" height="236.33333333333334"/>
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="228.33333333333334"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="9SS-7K-3sK">
-                                    <rect key="frame" x="0.0" y="0.0" width="345" height="85.666666666666671"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9SS-7K-3sK">
+                                    <rect key="frame" x="0.0" y="0.0" width="345" height="81.666666666666671"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tb3-Yf-uKr">
                                             <rect key="frame" x="0.0" y="0.0" width="345" height="21.666666666666668"/>
@@ -40,7 +40,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter_your_username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gF-4h-tY5" customClass="AppTextField" customModule="stationclub" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="33.666666666666671" width="345" height="52"/>
+                                            <rect key="frame" x="0.0" y="29.666666666666671" width="345" height="52"/>
                                             <color key="backgroundColor" name="Cell"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="52" id="tCX-fn-8dm"/>
@@ -56,8 +56,8 @@
                                         </textField>
                                     </subviews>
                                 </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0S9-eU-EAB">
-                                    <rect key="frame" x="0.0" y="109.66666666666666" width="345" height="85.666666666666657"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0S9-eU-EAB">
+                                    <rect key="frame" x="0.0" y="105.66666666666666" width="345" height="81.666666666666657"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1f-bc-aEO">
                                             <rect key="frame" x="0.0" y="0.0" width="345" height="21.666666666666668"/>
@@ -66,7 +66,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter_your_password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3BT-FN-Cwo" customClass="AppTextField" customModule="stationclub" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="33.666666666666686" width="345" height="52"/>
+                                            <rect key="frame" x="0.0" y="29.666666666666686" width="345" height="52"/>
                                             <color key="backgroundColor" name="Cell"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="52" id="EAI-ed-L8d"/>
@@ -83,7 +83,7 @@
                                     </subviews>
                                 </stackView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="forget_your_password" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLv-TC-oaI">
-                                    <rect key="frame" x="0.0" y="219.33333333333331" width="345" height="17"/>
+                                    <rect key="frame" x="0.0" y="211.33333333333331" width="345" height="17"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                     <color key="textColor" name="SubText"/>
                                     <nil key="highlightedColor"/>
@@ -91,7 +91,7 @@
                             </subviews>
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tB-5H-PvF" customClass="AppButton" customModule="stationclub" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="300.33333333333331" width="345" height="52"/>
+                            <rect key="frame" x="0.0" y="292.33333333333331" width="345" height="52"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="52" id="I5i-Ov-9CI"/>
                             </constraints>
@@ -121,13 +121,13 @@
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Cell">
-            <color red="0.078431372549019607" green="0.078431372549019607" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="MainText">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="SubText">
-            <color red="0.40392156862745099" green="0.42352941176470588" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
