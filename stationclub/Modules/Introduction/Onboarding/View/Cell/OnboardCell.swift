@@ -20,7 +20,12 @@ class OnboardCell: UICollectionViewCell {
         
     func configure(with onboardModel: OnboardModel) {
         img.image = UIImage(named: onboardModel.imgUrl)
+        img.addGradient(colors: [.clear, .clear, .appBlack])
         title.text = onboardModel.title
         desc.text = onboardModel.desc
+        
+        #warning("Hidden labels")
+        title.alpha = 0
+        desc.alpha = 0
     }
 }

@@ -16,7 +16,7 @@ import Foundation
  - parameter production: For the application during the launching on App store.
  */
 
-let API = Api(config: .production)
+let API = Api(config: .development)
 
 enum APIConfiguration {
 

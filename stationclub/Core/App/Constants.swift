@@ -22,7 +22,7 @@ enum Constants {
     
     static let defaultMapCoordinate = CLLocationCoordinate2D(latitude: 29.98363650061996, longitude: 31.230690662601187)
     
-    static let buttonCornerRadius: CGFloat = 8
+    static let buttonCornerRadius: CGFloat = 26
 }
 
 enum Images {
@@ -33,7 +33,7 @@ enum Images {
     static let search = "ic-search"
     static let option = "ic-option"
     static let share = "ic-share"
-    static let onboarding = ["onboard-1", "onboard-2", "onboard-3", "onboard-4", "onboard-5"]
+    static let onboarding = ["onboard-1", "onboard-2", "onboard-3", "onboard-4"]
     static let nextArrow = "ic-arrow-next"
     static let podcast = "ic-podcast"
     static let placeHolder = "ic-place-holder"

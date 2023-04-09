@@ -26,7 +26,7 @@ class AuthRepo: Repo {
 //            }
 //        }
 //    }
-//
+
     func login(signForm: SignForm, _ completion: @escaping (APIResponse<User>) -> ()) {
         provider.request(type: User.self, service: Api.Auth.login(signForm: signForm)) { response in
             switch (response) {
@@ -39,7 +39,7 @@ class AuthRepo: Repo {
             }
         }
     }
-//
+    
 //    func verify(code: String, _ completion: @escaping (APIResponse<User>) -> ()) {
 //        provider.request(type: Ignore.self, service: Api.Auth.verify(code: code)) { response in
 //            switch (response) {

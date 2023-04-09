@@ -2,18 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>CircularStd-Light.ttf</string>
-		<string>CircularStd-LightItalic.ttf</string>
-		<string>CircularStd-Regular.ttf</string>
-		<string>CircularStd-RegularItalic.ttf</string>
-		<string>CircularStd-Medium.ttf</string>
-		<string>CircularStd-MediumItalic.ttf</string>
-		<string>CircularStd-Bold.ttf</string>
-		<string>CircularStd-BoldItalic.ttf</string>
-		<string>CircularStd-Black.ttf</string>
-		<string>CircularStd-BlackItalic.ttf</string>
+		<string>Satoshi-Light.otf</string>
+		<string>Satoshi-LightItalic.otf</string>
+		<string>Satoshi-Regular.otf</string>
+		<string>Satoshi-RegularItalic.otf</string>
+		<string>Satoshi-Medium.otf</string>
+		<string>Satoshi-MediumItalic.otf</string>
+		<string>Satoshi-Bold.otf</string>
+		<string>Satoshi-BoldItalic.otf</string>
+		<string>Satoshi-Black.otf</string>
+		<string>Satoshi-BlackItalic.otf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

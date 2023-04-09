@@ -11,28 +11,19 @@ import UIKit
 class OnboardingController: BaseController {
     
     @IBOutlet weak var collectionView: IntrinsicCollectionView!
-    @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var btnNext: AppButton!
-    @IBOutlet weak var btnChangeLanguage: AccentButton!
-    @IBOutlet weak var btnSkip: AccentButton!
+    @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var lblProgress: UILabel!
+    @IBOutlet weak var cellTitle: UILabel!
+    @IBOutlet weak var cellDesc: UILabel!
     
-    @IBOutlet weak var btnNextWidth: NSLayoutConstraint!
-    @IBOutlet weak var viewGradient: UIView!
     
     var presenter: OnboardingPresenterInterface!
     
     var currentPage = 0 {
         didSet {
             if oldValue != currentPage {
-                
-                pageControl.currentPage = currentPage
-                createGradient(color: onboardList[currentPage].color)
-                if currentPage == onboardList.count - 1 {
-                    morphRecButtom()
-                } else {
-                    morphCircleButtom()
-                }
-                
+                updateProgress()
             }
         }
     }
@@ -43,23 +34,20 @@ class OnboardingController: BaseController {
         "Welcome to the club",
         "Bring back radio to life!",
         "Not just a station",
-        "Listen anytime anywhere",
-        "In-touch while listening"
+        "Listen anytime anywhere"
     ]
     var onboardDesc : [String] = [
-        "Connect over too many live talks and music streaming.1",
-        "Connect over too many live talks and music streaming.2",
-        "Connect over too many live talks and music streaming.3",
-        "Connect over too many live talks and music streaming.4",
-        "Connect over too many live talks and music streaming.5"
+        "Connect over too many live talks and music streaming. Connect over too many live talks and music streaming. 1",
+        "Connect over too many live talks and music streaming. Connect over too many live talks and music streaming. 2",
+        "Connect over too many live talks and music streaming. Connect over too many live talks and music streaming. 3",
+        "Connect over too many live talks and music streaming. Connect over too many live talks and music streaming. 4"
     ]
     
     var colors : [UIColor] = [
         .primary,
         .appYellow,
         .appRed,
-        .primary,
-        .appBlue
+        .primary
     ]
     
     override func viewDidLoad() {
@@ -69,17 +57,10 @@ class OnboardingController: BaseController {
     }
     
     func setupViews() {
+        btnNext.setTitle("next")
+        
         setupData()
-        morphCircleButtom()
-        
-        btnChangeLanguage.setRadius()
-        btnSkip.setRadius()
-        btnSkip.setTitle("skip")
-        
-        viewGradient.alpha = 0.2
-        viewGradient.addGradient(colors: [onboardList[currentPage].color, .appBlack])
-        
-        pageControl.numberOfPages = Images.onboarding.count
+        updateProgress()
     }
     
     func setupData () {
@@ -107,65 +88,37 @@ class OnboardingController: BaseController {
         }
     }
     
-    @IBAction func btnChnageLanguageClicked(_ sender: Any) {
-        presenter.didClickedLanguage()
-    }
-    
-    @IBAction func btnSkipClicked(_ sender: Any) {
-        presenter.didClickedSkip()
-    }
-    
 }
 
-// MARK: - Buttons
+// MARK: - Update interface
 
 extension OnboardingController {
     
-    func morphRecButtom() {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now(), execute: { () -> Void in
-            UIView.animate(withDuration: 0.5, animations: { () -> Void in
+    func updateProgress() {
+        let progressValue = (Float(currentPage) + 1 ) / Float(onboardList.count)
+        self.cellTitle.alpha = 0
+        self.cellDesc.alpha = 0
+        
+        UIView.animate(withDuration: 0.75) {
+            self.progressBar.setProgress(Float(progressValue), animated: true)
+            self.lblProgress.text = "\(self.currentPage + 1) of \(self.onboardList.count)"
+            
+            self.cellTitle.text = self.onboardText[self.currentPage]
+            self.cellDesc.text = self.onboardDesc[self.currentPage]
+            
+            self.cellTitle.alpha = 1
+            self.cellDesc.alpha = 1
+            
+            if self.currentPage == self.onboardList.count - 1 {
                 self.btnNext.setTitle("get_started")
-                self.btnNextWidth.constant = self.view.bounds.width * 0.85
-                self.btnNext.setImage(nil, for: .normal)
-            })
-        })
+            } else {
+                self.btnNext.setTitle("next")
+            }
+        }
+        
         
     }
     
-    func morphCircleButtom() {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now(), execute: { () -> Void in
-            UIView.animate(withDuration: 0.5, animations: { () -> Void in
-                self.btnNext.setTitle("")
-                self.btnNextWidth.constant = self.btnNext.frame.height
-                self.btnNext.setImage(UIImage.init(named: Images.nextArrow), for: .normal)
-            })
-        })
-    }
-    
-}
-
-// MARK: - Gradient
-
-extension OnboardingController {
-    
-    func createGradient(color : UIColor) {
-        
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now(), execute: { () -> Void in
-            UIView.animate(withDuration: 3, animations: { () -> Void in
-                
-                self.viewGradient.alpha = 0.1
-                
-                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now(), execute: { () -> Void in
-                    UIView.animate(withDuration: 2, animations: { () -> Void in
-                        
-                        self.viewGradient.alpha = 0.2
-                        self.viewGradient.addGradient(colors: [color, .appBlack])
-                    })
-                })
-            })
-        })
-        
-    }
 }
 
 extension OnboardingController: OnboardingView {

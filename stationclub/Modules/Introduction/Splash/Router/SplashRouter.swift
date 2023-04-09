@@ -24,7 +24,11 @@ class SplashRouter: SplashRouterInterface {
     }
     
     func presentHome() {
-        RootRouter.presentRootTab()
+//        RootRouter.presentRootTab()
+        
+        #warning("test")
+        let vc = OnboardingRouter.assembleModule()
+        RootRouter.presentRoot(vc)
     }
 
     

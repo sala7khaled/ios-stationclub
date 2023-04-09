@@ -67,38 +67,38 @@ struct AppFontName {
 
 struct AppFontNameEn {
     
-    static let light = "CircularStd-Light"
-    static let lightItalic = "CircularStd-LightItalic"
+    static let light = "Satoshi-Light"
+    static let lightItalic = "Satoshi-LightItalic"
     
-    static let regular = "CircularStd-Regular"
-    static let regularItalic = "CircularStd-RegularItalic"
+    static let regular = "Satoshi-Regular"
+    static let regularItalic = "Satoshi-RegularItalic"
     
-    static let medium = "CircularStd-Medium"
-    static let mediumItalic = "CircularStd-MediumItalic"
+    static let medium = "Satoshi-Medium"
+    static let mediumItalic = "Satoshi-MediumItalic"
     
-    static let bold = "CircularStd-Bold"
-    static let boldItalic = "CircularStd-BoldItalic"
+    static let bold = "Satoshi-Bold"
+    static let boldItalic = "Satoshi-BoldItalic"
     
-    static let black = "CircularStd-Black"
-    static let blackItalic = "CircularStd-BlackItalic"
+    static let black = "Satoshi-Black"
+    static let blackItalic = "Satoshi-BlackItalic"
 }
 
 struct AppFontNameAr {
     
-    static let light = "CircularStd-Light"
-    static let lightItalic = "CircularStd-LightItalic"
+    static let light = "Satoshi-Light"
+    static let lightItalic = "Satoshi-LightItalic"
     
-    static let regular = "CircularStd-Regular"
-    static let regularItalic = "CircularStd-RegularItalic"
+    static let regular = "Satoshi-Regular"
+    static let regularItalic = "Satoshi-RegularItalic"
     
-    static let medium = "CircularStd-Medium"
-    static let mediumItalic = "CircularStd-MediumItalic"
+    static let medium = "Satoshi-Medium"
+    static let mediumItalic = "Satoshi-MediumItalic"
     
-    static let bold = "CircularStd-Bold"
-    static let boldItalic = "CircularStd-BoldItalic"
+    static let bold = "Satoshi-Bold"
+    static let boldItalic = "Satoshi-BoldItalic"
     
-    static let black = "CircularStd-Black"
-    static let blackItalic = "CircularStd-BlackItalic"
+    static let black = "Satoshi-Black"
+    static let blackItalic = "Satoshi-BlackItalic"
 }
 
 extension UIFontDescriptor.AttributeName {

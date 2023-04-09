@@ -12,9 +12,8 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
     
     
     func initTableView() {
-        tableView.initialize(cellClass: FeaturedCell.self, delegate: self, dataSource: self, estimatedRowHeight: 400)
+        tableView.initialize(cellClass: FeaturedCell.self, delegate: self, dataSource: self, estimatedRowHeight: 400, edgeInsets: UIEdgeInsets(top: 0, left: 0, bottom: 112, right: 0))
         tableView.contentInsetAdjustmentBehavior = .never
-        tableView.contentInset.bottom = 112
         
         tableView.registerCellNib(cellClass: FeaturedCell.self)
         tableView.registerCellNib(cellClass: HeaderCell.self)
@@ -55,6 +54,7 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        #warning("Handle case 1")
         presenter.didClickedStation(of: stations[indexPath.row])
     }
 }

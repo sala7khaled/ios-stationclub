@@ -72,7 +72,6 @@ class SignInController: BaseController {
             let signForm = SignForm(username: txtFldUsername.text!, password: txtFldPassword.text!)
             presenter.didClickedLogin(signForm: signForm)
         }
-        
     }
 }
 

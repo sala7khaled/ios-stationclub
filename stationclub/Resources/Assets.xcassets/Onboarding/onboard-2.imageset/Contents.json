@@ -1,19 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "Mask Group 31.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "Mask Group 31@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "Mask Group 31@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "2.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {

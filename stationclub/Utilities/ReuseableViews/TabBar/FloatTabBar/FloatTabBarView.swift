@@ -39,7 +39,7 @@ class FloatTabBarView: UIView {
 
     func setupStackView(_ icons: [String]) {
         for (index, icon) in icons.enumerated() {
-            let symbolConfig = UIImage.SymbolConfiguration(pointSize: 18, weight: .medium, scale: .medium)
+            let symbolConfig = UIImage.SymbolConfiguration(pointSize: 16, weight: .regular, scale: .default)
             let normalIcon = UIImage(systemName: icon, withConfiguration: symbolConfig)
             let selectedIcon = UIImage(systemName: "\(icon).fill", withConfiguration: symbolConfig)
             let button = createButton(normalIcon: normalIcon!, selectedIcon: selectedIcon!, index: index)
