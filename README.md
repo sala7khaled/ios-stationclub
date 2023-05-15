@@ -2,6 +2,7 @@
 
 Welcome to the ios-stationclub repository! This repository contains the source code for the iOS application of stationclub, a social networking platform for podcast and radio enthusiasts. With stationclub, users can discover new podcasts and radio stations, connect with other enthusiasts, and share their favorite shows and episodes.
 
+<br>
 
 ## Features
 
@@ -14,6 +15,8 @@ Welcome to the ios-stationclub repository! This repository contains the source c
 - [ ] Receive notifications for new followers, likes, and comments.
 - [ ] Many will follow!
 
+<br>
+<br>
 
 ## Screenshots
 
@@ -21,6 +24,8 @@ Welcome to the ios-stationclub repository! This repository contains the source c
 | --- | --- | --- | --- |
 | ![Splash](/screenshots/splash.png) | ![Onboarding](/screenshots/onboarding.png) | ![Landing](/screenshots/landing.png) | ![Sign in](/screenshots/sign-in.png) |
 
+<br>
+<br>
 
 ## Installation
 
@@ -36,11 +41,15 @@ git clone https://github.com/sala7khaled/ios-stationclub.git
 
 3. Once the project is opened in Xcode, build and run the project using the simulator or a connected device.
 
+<br>
+<br>
 
 ## Dependencies
 
 The ios-stationclub repository required no dependencies. I don't manage to add any third party libraries so for, only native `swift` code.
 
+<br>
+<br>
 
 ## Contributing
 
@@ -62,11 +71,15 @@ git checkout -b feature/my-feature
 
 Please ensure that your code follows the existing code style and conventions.
 
+<br>
+<br>
 
 ## License
 
 The ios-stationclub repository is released under the [MIT License](LICENSE).
 
+<br>
+<br>
 
 ## Contact
 
@@ -76,6 +89,8 @@ If you have any questions or suggestions regarding the ios-stationclub applicati
 - Email: sala7khaled7@gmail.com
 - Linkedin: [sala7khaled](Https://www.linkedin.com/in/sala7khaled/)
 
+<br>
+<br>
 
 ## Conclusion
 
