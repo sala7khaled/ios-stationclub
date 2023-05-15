@@ -13,7 +13,7 @@ Welcome to the ios-stationclub repository! This repository contains the source c
 - [ ] Customize your profile and view other users' profiles.
 - [ ] Donor to the podcast and join live voice discussions on air.
 - [ ] Receive notifications for new followers, likes, and comments.
-- [ ] Many will follow!
+- [ ] Many will follow...
 
 <br>
 <br>
