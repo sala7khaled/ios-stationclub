@@ -30,7 +30,7 @@ Welcome to the ios-stationclub repository! This repository contains the source c
 
 ## Architecture
 
-I've used **VIPER** Architecture for better project extension; every component is reusable.
+I've used `VIPER` Architecture for better project extension; every component is reusable.
 ```mermaid
 graph TD;
     View --> Presenter;
