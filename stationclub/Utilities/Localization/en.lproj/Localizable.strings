@@ -72,3 +72,9 @@
 "notifications" = "Notifications";
 "profile" = "Profile";
 "on_live" = "Live stations around";
+
+
+// MARK: PODCAST
+
+"podcast" = "Podcast";
+"broadcast_organizer" = "Broadcast organizer";

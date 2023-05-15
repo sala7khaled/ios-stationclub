@@ -14,7 +14,7 @@ struct Podcast: Codable {
     var hostName: String
     var title: String
     var tags: [String]
-    var members: [Member]
+    var guests: [Guest]
 
 }
 
@@ -27,6 +27,6 @@ extension Podcast {
         case hostName = "host_name"
         case title
         case tags
-        case members
+        case guests
     }
 }

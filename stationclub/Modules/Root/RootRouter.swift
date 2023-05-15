@@ -20,7 +20,9 @@ class RootRouter {
     }
     
     static func presentRootTab() {
-        presentRoot(FloatTabBarController())
+        #warning("Test Tab Bar")
+//        presentRoot(FloatTabBarController())
+        presentRoot(AppTabBarController())
     }
     
     static func presentRootScreen(in window: UIWindow?, vc: UIViewController) {
@@ -40,7 +42,7 @@ class RootRouter {
     }
     
     static func resetApp() {
-        resetApp(with: OnboardingRouter.assembleModule())
+        resetApp(with: SplashRouter.assembleModule())
     }
     
     static func resetApp(with vc: UIViewController) {

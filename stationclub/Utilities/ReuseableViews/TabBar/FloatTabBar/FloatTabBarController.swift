@@ -51,7 +51,7 @@ class FloatTabBarController: UITabBarController {
         floatTabBarView = FloatTabBarView([TabIcon.tab1, TabIcon.tab2, TabIcon.tab3, TabIcon.tab4])
         
         viewControllers = [
-            TabVC.tab1,
+            createNavController(vc: TabVC.tab1, title: TabTitle.tab1, icon: TabIcon.tab1),
             createNavController(vc: TabVC.tab2, title: TabTitle.tab2, icon: TabIcon.tab2),
             createNavController(vc: TabVC.tab3, title: TabTitle.tab3, icon: TabIcon.tab3),
             createNavController(vc: TabVC.tab4, title: TabTitle.tab4, icon: TabIcon.tab4)

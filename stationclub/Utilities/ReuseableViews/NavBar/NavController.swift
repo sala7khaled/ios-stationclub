@@ -16,19 +16,19 @@ class NavController: UINavigationController {
     }
     
     private func configure() {
-        /// navigationBar.tintColor = .primary
-        /// navigationBar.barTintColor = .appWhite
+        navigationBar.tintColor = .primary
+        navigationBar.barTintColor = .appWhite
         
         let font = UIFont.mediumFont(ofSize: 20)
         let largeFont = UIFont.boldFont(ofSize: 38)
         
         navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.black,
+            NSAttributedString.Key.foregroundColor: UIColor.appWhite,
             NSAttributedString.Key.font: font
         ]
         
         navigationBar.largeTitleTextAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.black,
+            NSAttributedString.Key.foregroundColor: UIColor.appWhite,
             NSAttributedString.Key.font: largeFont
         ]
         

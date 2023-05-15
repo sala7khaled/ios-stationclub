@@ -14,10 +14,10 @@ class HeaderCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        setupView()
     }
     
-    func setupView() {
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
     }
 
     func configure(with title: String) {

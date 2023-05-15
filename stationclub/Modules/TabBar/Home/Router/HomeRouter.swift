@@ -13,8 +13,19 @@ class HomeRouter: HomeRouterInterface {
     weak var viewController: UIViewController?
     
     func presentStation(of station: Station) {
-//        let vc = StationRouter.assembleModule(with: station)
-//        RootRouter.presentRootNav(with: vc)
+        
+        let podcast = Podcast(cover: station.cover,
+                              hostAvatar: station.hostAvatar,
+                              hostName: station.hostName,
+                              title: station.podcastTitle,
+                              tags: ["Personal growth", "Motivation"],
+                              guests: [Guest(avatar: station.hostAvatar, name: "Salah Khaled"),
+                                       Guest(avatar: station.hostAvatar, name: "Salah Khaled"),
+                                       Guest(avatar: station.hostAvatar, name: "Salah Khaled"),
+                                       Guest(avatar: station.hostAvatar, name: "Salah Khaled")])
+        
+        let vc = PodcastRouter.assembleModule(podcast: podcast)
+        RootRouter.pushVC(vc, in: viewController!)
     }
     
     func presentError(with message: String?) {

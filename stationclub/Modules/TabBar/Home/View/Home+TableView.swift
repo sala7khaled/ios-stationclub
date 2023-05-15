@@ -54,7 +54,7 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        #warning("Handle case 1")
-        presenter.didClickedStation(of: stations[indexPath.row])
+        #warning("Static route")
+        presenter.didClickedStation(of: stations[1])
     }
 }

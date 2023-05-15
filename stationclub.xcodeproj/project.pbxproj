@@ -40,7 +40,6 @@
 		880C7A75299E25F000998F15 /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A74299E25F000998F15 /* URLSessionProvider.swift */; };
 		880C7A77299E262000998F15 /* AuthRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A76299E262000998F15 /* AuthRepo.swift */; };
 		880C7A79299E262F00998F15 /* UserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A78299E262F00998F15 /* UserRepo.swift */; };
-		880C7A7B299E263700998F15 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A7A299E263700998F15 /* Repo.swift */; };
 		880C7A7D299E265500998F15 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A7C299E265500998F15 /* UIFont+Extension.swift */; };
 		880C7A7F299E266B00998F15 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A7E299E266B00998F15 /* UserDefaults+Extension.swift */; };
 		880C7A81299E268B00998F15 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A80299E268B00998F15 /* String+Extension.swift */; };
@@ -144,7 +143,7 @@
 		882A1FB429DD7C11000F76E6 /* PodcastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A1FB229DD7C11000F76E6 /* PodcastController.swift */; };
 		882A1FB529DD7C11000F76E6 /* PodcastController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882A1FB329DD7C11000F76E6 /* PodcastController.xib */; };
 		882A1FB729DD89B6000F76E6 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A1FB629DD89B6000F76E6 /* Podcast.swift */; };
-		882A1FB929DD8A8A000F76E6 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A1FB829DD8A8A000F76E6 /* Member.swift */; };
+		882A1FB929DD8A8A000F76E6 /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A1FB829DD8A8A000F76E6 /* Guest.swift */; };
 		8855190129A20CC800B8282A /* SplashContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8855190029A20CC800B8282A /* SplashContract.swift */; };
 		8855190329A20CD400B8282A /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8855190229A20CD400B8282A /* SplashInteractor.swift */; };
 		8855190529A20CDC00B8282A /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8855190429A20CDC00B8282A /* SplashPresenter.swift */; };
@@ -157,13 +156,17 @@
 		8855191929A226B900B8282A /* LandingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8855191829A226B900B8282A /* LandingRouter.swift */; };
 		8855191C29A226C500B8282A /* LandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8855191A29A226C500B8282A /* LandingController.swift */; };
 		8855191D29A226C500B8282A /* LandingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8855191B29A226C500B8282A /* LandingController.xib */; };
+		88663BBE29E559E50012D3FD /* Podcast+Collectionview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88663BBD29E559E50012D3FD /* Podcast+Collectionview.swift */; };
 		88A6283F29A6018900A53AE5 /* SignInContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A6283E29A6018900A53AE5 /* SignInContract.swift */; };
 		88A6284129A6019200A53AE5 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A6284029A6019200A53AE5 /* SignInInteractor.swift */; };
 		88A6284329A6019800A53AE5 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A6284229A6019800A53AE5 /* SignInPresenter.swift */; };
 		88A6284529A6019D00A53AE5 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A6284429A6019D00A53AE5 /* SignInRouter.swift */; };
 		88A6284829A601A700A53AE5 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A6284629A601A700A53AE5 /* SignInController.swift */; };
 		88A6284929A601A700A53AE5 /* SignInController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A6284729A601A700A53AE5 /* SignInController.xib */; };
+		88C166B029E561F700F9C82F /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C166AE29E561F700F9C82F /* TagCell.swift */; };
+		88C166B129E561F700F9C82F /* TagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C166AF29E561F700F9C82F /* TagCell.xib */; };
 		88C3987529A39B69004CCEB1 /* CustomAlertEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C3987429A39B69004CCEB1 /* CustomAlertEntity.swift */; };
+		88C3E4EE29E434A800BD3747 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A7A299E263700998F15 /* Repo.swift */; };
 		88C6354A29AB3A0B0072C1FF /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C6354929AB3A0B0072C1FF /* HomeContract.swift */; };
 		88C6354C29AB3A110072C1FF /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C6354B29AB3A110072C1FF /* HomeInteractor.swift */; };
 		88C6354E29AB3A160072C1FF /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C6354D29AB3A160072C1FF /* HomePresenter.swift */; };
@@ -178,6 +181,10 @@
 		88C6356529AB3B0A0072C1FF /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C6356329AB3B0A0072C1FF /* HeaderCell.xib */; };
 		88C6356829AB3B180072C1FF /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C6356629AB3B180072C1FF /* StationCell.swift */; };
 		88C6356929AB3B180072C1FF /* StationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C6356729AB3B180072C1FF /* StationCell.xib */; };
+		88DF70D829E578DC00673316 /* GuestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF70D629E578DC00673316 /* GuestCell.swift */; };
+		88DF70D929E578DC00673316 /* GuestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DF70D729E578DC00673316 /* GuestCell.xib */; };
+		88F545DA2A07A0AE00D89C5E /* AppTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F545D92A07A0AE00D89C5E /* AppTabBar.swift */; };
+		88F545DC2A07A0E200D89C5E /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F545DB2A07A0E200D89C5E /* AppTabBarController.swift */; };
 		88F7E4A429AF47FA00622992 /* DeviceForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F7E4A329AF47FA00622992 /* DeviceForm.swift */; };
 /* End PBXBuildFile section */
 
@@ -296,7 +303,7 @@
 		880C7B3E299E312300998F15 /* OnboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardModel.swift; sourceTree = "<group>"; };
 		880C7B45299E318F00998F15 /* Onboarding+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Onboarding+CollectionView.swift"; sourceTree = "<group>"; };
 		880C7B4B299E6B2400998F15 /* OnboardingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardingController.xib; sourceTree = "<group>"; };
-		880C7B4C299E6B2400998F15 /* OnboardingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		880C7B4C299E6B2400998F15 /* OnboardingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		880C7B4F299E6B3400998F15 /* OnboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardCell.swift; sourceTree = "<group>"; };
 		880C7B50299E6B3400998F15 /* OnboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardCell.xib; sourceTree = "<group>"; };
 		882A1F7729DD74AF000F76E6 /* Satoshi-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-LightItalic.otf"; sourceTree = "<group>"; };
@@ -322,7 +329,7 @@
 		882A1FB229DD7C11000F76E6 /* PodcastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastController.swift; sourceTree = "<group>"; };
 		882A1FB329DD7C11000F76E6 /* PodcastController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastController.xib; sourceTree = "<group>"; };
 		882A1FB629DD89B6000F76E6 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
-		882A1FB829DD8A8A000F76E6 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		882A1FB829DD8A8A000F76E6 /* Guest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guest.swift; sourceTree = "<group>"; };
 		8855190029A20CC800B8282A /* SplashContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashContract.swift; sourceTree = "<group>"; };
 		8855190229A20CD400B8282A /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		8855190429A20CDC00B8282A /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
@@ -335,12 +342,15 @@
 		8855191829A226B900B8282A /* LandingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingRouter.swift; sourceTree = "<group>"; };
 		8855191A29A226C500B8282A /* LandingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingController.swift; sourceTree = "<group>"; };
 		8855191B29A226C500B8282A /* LandingController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingController.xib; sourceTree = "<group>"; };
+		88663BBD29E559E50012D3FD /* Podcast+Collectionview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Podcast+Collectionview.swift"; sourceTree = "<group>"; };
 		88A6283E29A6018900A53AE5 /* SignInContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInContract.swift; sourceTree = "<group>"; };
 		88A6284029A6019200A53AE5 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
 		88A6284229A6019800A53AE5 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		88A6284429A6019D00A53AE5 /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
 		88A6284629A601A700A53AE5 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		88A6284729A601A700A53AE5 /* SignInController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInController.xib; sourceTree = "<group>"; };
+		88C166AE29E561F700F9C82F /* TagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
+		88C166AF29E561F700F9C82F /* TagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCell.xib; sourceTree = "<group>"; };
 		88C3987429A39B69004CCEB1 /* CustomAlertEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertEntity.swift; sourceTree = "<group>"; };
 		88C6354929AB3A0B0072C1FF /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
 		88C6354B29AB3A110072C1FF /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
@@ -356,6 +366,10 @@
 		88C6356329AB3B0A0072C1FF /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		88C6356629AB3B180072C1FF /* StationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCell.swift; sourceTree = "<group>"; };
 		88C6356729AB3B180072C1FF /* StationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationCell.xib; sourceTree = "<group>"; };
+		88DF70D629E578DC00673316 /* GuestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestCell.swift; sourceTree = "<group>"; };
+		88DF70D729E578DC00673316 /* GuestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuestCell.xib; sourceTree = "<group>"; };
+		88F545D92A07A0AE00D89C5E /* AppTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBar.swift; sourceTree = "<group>"; };
+		88F545DB2A07A0E200D89C5E /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
 		88F7E4A329AF47FA00622992 /* DeviceForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -490,9 +504,9 @@
 		880C7A0A299E211D00998F15 /* Repos */ = {
 			isa = PBXGroup;
 			children = (
+				880C7A7A299E263700998F15 /* Repo.swift */,
 				880C7A76299E262000998F15 /* AuthRepo.swift */,
 				880C7A78299E262F00998F15 /* UserRepo.swift */,
-				880C7A7A299E263700998F15 /* Repo.swift */,
 			);
 			path = Repos;
 			sourceTree = "<group>";
@@ -552,7 +566,7 @@
 				880C7B21299E2F2100998F15 /* AuthResponse.swift */,
 				880C7A66299E255100998F15 /* Station.swift */,
 				882A1FB629DD89B6000F76E6 /* Podcast.swift */,
-				882A1FB829DD8A8A000F76E6 /* Member.swift */,
+				882A1FB829DD8A8A000F76E6 /* Guest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -784,6 +798,8 @@
 		880C7A2B299E227600998F15 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				88F545D92A07A0AE00D89C5E /* AppTabBar.swift */,
+				88F545DB2A07A0E200D89C5E /* AppTabBarController.swift */,
 				880C7B26299E305700998F15 /* FloatTabBar */,
 			);
 			path = TabBar;
@@ -1243,6 +1259,8 @@
 		882A1FA529DD7BDB000F76E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				88663BBF29E55A540012D3FD /* Cell */,
+				88663BBD29E559E50012D3FD /* Podcast+Collectionview.swift */,
 				882A1FB229DD7C11000F76E6 /* PodcastController.swift */,
 				882A1FB329DD7C11000F76E6 /* PodcastController.xib */,
 			);
@@ -1385,6 +1403,15 @@
 				8855191229A226A700B8282A /* LandingContract.swift */,
 			);
 			path = Contact;
+			sourceTree = "<group>";
+		};
+		88663BBF29E55A540012D3FD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				88DF70D429E578B100673316 /* Tag */,
+				88DF70D529E578BA00673316 /* Guest */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		88A6283829A6016300A53AE5 /* SignIn */ = {
@@ -1566,6 +1593,24 @@
 			path = HeaderCell;
 			sourceTree = "<group>";
 		};
+		88DF70D429E578B100673316 /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				88C166AE29E561F700F9C82F /* TagCell.swift */,
+				88C166AF29E561F700F9C82F /* TagCell.xib */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
+		88DF70D529E578BA00673316 /* Guest */ = {
+			isa = PBXGroup;
+			children = (
+				88DF70D629E578DC00673316 /* GuestCell.swift */,
+				88DF70D729E578DC00673316 /* GuestCell.xib */,
+			);
+			path = Guest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1631,6 +1676,7 @@
 				880C7B52299E6B3400998F15 /* OnboardCell.xib in Resources */,
 				880C79FB299E1FF800998F15 /* LaunchScreen.storyboard in Resources */,
 				88C6356129AB3AFF0072C1FF /* FeaturedCell.xib in Resources */,
+				88C166B129E561F700F9C82F /* TagCell.xib in Resources */,
 				882A1F8529DD74B0000F76E6 /* Satoshi-MediumItalic.otf in Resources */,
 				880C7AC1299E2A1B00998F15 /* Colors.xcassets in Resources */,
 				882A1FB529DD7C11000F76E6 /* PodcastController.xib in Resources */,
@@ -1641,6 +1687,7 @@
 				880C7AD8299E2B4D00998F15 /* Localizable.strings in Resources */,
 				880C7AEA299E2C4A00998F15 /* LoadingController.xib in Resources */,
 				880C79F8299E1FF800998F15 /* Assets.xcassets in Resources */,
+				88DF70D929E578DC00673316 /* GuestCell.xib in Resources */,
 				882A1F8129DD74B0000F76E6 /* Satoshi-LightItalic.otf in Resources */,
 				882A1FA129DD7B6B000F76E6 /* StationController.xib in Resources */,
 				882A1F8929DD74B0000F76E6 /* Satoshi-Italic.otf in Resources */,
@@ -1705,6 +1752,7 @@
 				880C7B20299E2E7300998F15 /* Validator.swift in Sources */,
 				880C79F1299E1FF700998F15 /* SceneDelegate.swift in Sources */,
 				880C7A6D299E257C00998F15 /* AuthService.swift in Sources */,
+				88F545DC2A07A0E200D89C5E /* AppTabBarController.swift in Sources */,
 				880C7B33299E30DF00998F15 /* OnboardingContract.swift in Sources */,
 				88C6356429AB3B0A0072C1FF /* HeaderCell.swift in Sources */,
 				880C7B1C299E2E4E00998F15 /* AppTextField.swift in Sources */,
@@ -1713,6 +1761,7 @@
 				880C7B22299E2F2100998F15 /* AuthResponse.swift in Sources */,
 				8855190A29A20D0800B8282A /* SplashController.swift in Sources */,
 				880C7ACD299E2AF400998F15 /* LanguageHandler.swift in Sources */,
+				88F545DA2A07A0AE00D89C5E /* AppTabBar.swift in Sources */,
 				880C7AD1299E2B1200998F15 /* AppLanguage.swift in Sources */,
 				882A1FA029DD7B6B000F76E6 /* StationController.swift in Sources */,
 				880C7AE7299E2C3B00998F15 /* IntrinsicTableView.swift in Sources */,
@@ -1726,10 +1775,12 @@
 				880C7A67299E255100998F15 /* Station.swift in Sources */,
 				880C7AA2299E27E100998F15 /* BaseEntity.swift in Sources */,
 				880C7A65299E253E00998F15 /* SignForm.swift in Sources */,
+				88663BBE29E559E50012D3FD /* Podcast+Collectionview.swift in Sources */,
 				880C7A73299E25DC00998F15 /* URLSessionProtocol.swift.swift in Sources */,
 				88C6356829AB3B180072C1FF /* StationCell.swift in Sources */,
 				880C7B37299E30F300998F15 /* OnboardingPresenter.swift in Sources */,
 				880C7A75299E25F000998F15 /* URLSessionProvider.swift in Sources */,
+				88C3E4EE29E434A800BD3747 /* Repo.swift in Sources */,
 				880C7A4B299E247D00998F15 /* ServiceProtocol.swift in Sources */,
 				880C7A69299E256300998F15 /* APIError.swift in Sources */,
 				880C7AF9299E2D3200998F15 /* DocumentTypes.swift in Sources */,
@@ -1739,7 +1790,7 @@
 				880C7A45299E244F00998F15 /* KeyChain.swift in Sources */,
 				880C7A5B299E24F700998F15 /* URLRequest+Extension.swift in Sources */,
 				880C7B35299E30E800998F15 /* OnboardingInteractor.swift in Sources */,
-				882A1FB929DD8A8A000F76E6 /* Member.swift in Sources */,
+				882A1FB929DD8A8A000F76E6 /* Guest.swift in Sources */,
 				88C6354E29AB3A160072C1FF /* HomePresenter.swift in Sources */,
 				880C7AC3299E2A9A00998F15 /* Console.swift in Sources */,
 				880C7A87299E26C400998F15 /* UIButton+Extension.swift in Sources */,
@@ -1784,9 +1835,9 @@
 				882A1FB729DD89B6000F76E6 /* Podcast.swift in Sources */,
 				880C7AED299E2C8000998F15 /* AppLocationManager.swift in Sources */,
 				880C7AD3299E2B1D00998F15 /* Localizer.swift in Sources */,
+				88DF70D829E578DC00673316 /* GuestCell.swift in Sources */,
 				88C6355029AB3A1B0072C1FF /* HomeRouter.swift in Sources */,
 				880C7AA4299E27FF00998F15 /* BaseRouter.swift in Sources */,
-				880C7A7B299E263700998F15 /* Repo.swift in Sources */,
 				880C7AF7299E2D1A00998F15 /* DocumentSizes.swift in Sources */,
 				8855191929A226B900B8282A /* LandingRouter.swift in Sources */,
 				882A1F9729DD7B47000F76E6 /* StationContract.swift in Sources */,
@@ -1800,6 +1851,7 @@
 				880C7B06299E2DBF00998F15 /* LocationPickerInteractor.swift in Sources */,
 				880C7A9D299E27B000998F15 /* UIViewController+Extension.swift in Sources */,
 				880C7A61299E252000998F15 /* User.swift in Sources */,
+				88C166B029E561F700F9C82F /* TagCell.swift in Sources */,
 				8855191329A226A700B8282A /* LandingContract.swift in Sources */,
 				880C7B2A299E305700998F15 /* FloatTabBarController.swift in Sources */,
 				880C7B16299E2E1F00998F15 /* AppButton.swift in Sources */,

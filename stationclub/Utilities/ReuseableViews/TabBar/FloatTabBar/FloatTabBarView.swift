@@ -30,11 +30,10 @@ class FloatTabBarView: UIView {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        layer.backgroundColor = UIColor.appBlack.cgColor
+        layer.backgroundColor = UIColor.transparent.cgColor
     
         setRadius(bounds.height / 2.8)
-        addBlur()
-        addShadow(shadowRadius: bounds.height / 3, color: .subText, offset: .zero, opacity: 0.2)
+
     }
 
     func setupStackView(_ icons: [String]) {
@@ -73,6 +72,9 @@ class FloatTabBarView: UIView {
                 button.tintColor = .subText
             }
         }
+        
+        addBlur()
+        addShadow(shadowRadius: bounds.height / 3, color: .subText, offset: .zero, opacity: 0.2)
     }
 
     @objc

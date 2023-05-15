@@ -72,3 +72,9 @@
 "notifications" = "الإشعارات";
 "profile" = "الملف الشخصي";
 "on_live" = "مباشر الآن في";
+
+
+// MARK: PODCAST
+
+"podcast" = "بودكاست";
+"broadcast_organizer" = "منظم البودكاست";

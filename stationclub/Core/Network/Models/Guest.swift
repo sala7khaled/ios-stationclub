@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct Member: Codable {
+struct Guest: Codable {
         
     var avatar: String
     var name: String
     
 }
 
-extension Member {
+extension Guest {
     
     enum CodingKeys: String, CodingKey {
         

@@ -24,6 +24,10 @@ class StationCell: UITableViewCell {
         setupView()
     }
     
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+    
     func setupView() {
         imgPodcast.setRadius(imgPodcast.frame.height / 30)
         
