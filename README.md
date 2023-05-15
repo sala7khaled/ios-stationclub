@@ -17,11 +17,9 @@ Welcome to the ios-stationclub repository! This repository contains the source c
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
-*onboarding screen*
-
-![Screenshot 2](screenshots/screenshot2.png)
-*landing screen*
+| Splash | Onboarding | Landing | Sign in |
+| --- | --- | --- | --- |
+| ![Splash](/screenshots/splash.png) | ![Onboarding](/screenshots/onboarding.png) | ![Landing](/screenshots/landing.png) | ![Sign in](/screenshots/sign-in.png) |
 
 
 ## Installation
