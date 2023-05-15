@@ -3,6 +3,7 @@
 Welcome to the ios-stationclub repository! This repository contains the source code for the iOS application of stationclub, a social networking platform for podcast and radio enthusiasts. With stationclub, users can discover new podcasts and radio stations, connect with other enthusiasts, and share their favorite shows and episodes.
 
 <br>
+<br>
 
 ## Features
 
@@ -11,7 +12,7 @@ Welcome to the ios-stationclub repository! This repository contains the source c
 - [ ] Live chat on shows and episodes.
 - [ ] Discover popular and trending podcasts and radio stations.
 - [ ] Customize your profile and view other users' profiles.
-- [ ] Donor to the podcast and join live voice discussions on air.
+- [ ] Send gifts to the podcast and join live voice discussions on air.
 - [ ] Receive notifications for new followers, likes, and comments.
 - [ ] Many will follow...
 
@@ -45,6 +46,21 @@ git clone https://github.com/sala7khaled/ios-stationclub.git
 ## Dependencies
 
 The ios-stationclub repository required no dependencies. I don't manage to add any third-party libraries so far, only native `swift` code.
+
+<br>
+<br>
+
+## Architecture
+
+I've used **VIPER** Architecture for better project extension; every component is reusable.
+```mermaid
+graph TD;
+    View --> Presenter;
+    Interactor --> Presenter;
+    Presenter --> Interactor;
+    Presenter --> Router;
+    Interactor --> Entity;
+```
 
 <br>
 <br>
