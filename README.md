@@ -28,6 +28,21 @@ Welcome to the ios-stationclub repository! This repository contains the source c
 <br>
 <br>
 
+## Architecture
+
+I've used **VIPER** Architecture for better project extension; every component is reusable.
+```mermaid
+graph TD;
+    View --> Presenter;
+    Interactor --> Presenter;
+    Presenter --> Interactor;
+    Presenter --> Router;
+    Interactor --> Entity;
+```
+
+<br>
+<br>
+
 ## Installation
 
 To install and run the ios-stationclub application, follow these steps:
@@ -46,21 +61,6 @@ git clone https://github.com/sala7khaled/ios-stationclub.git
 ## Dependencies
 
 The ios-stationclub repository required no dependencies. I don't manage to add any third-party libraries so far, only native `swift` code.
-
-<br>
-<br>
-
-## Architecture
-
-I've used **VIPER** Architecture for better project extension; every component is reusable.
-```mermaid
-graph TD;
-    View --> Presenter;
-    Interactor --> Presenter;
-    Presenter --> Interactor;
-    Presenter --> Router;
-    Interactor --> Entity;
-```
 
 <br>
 <br>
