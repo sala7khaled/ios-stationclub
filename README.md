@@ -32,21 +32,19 @@ Welcome to the ios-stationclub repository! This repository contains the source c
 To install and run the ios-stationclub application, follow these steps:
 
 1. Clone the repository:
-
 ```bash
 git clone https://github.com/sala7khaled/ios-stationclub.git
 ```
-
 2. Open the project in Xcode.
-
-3. Once the project is opened in Xcode, build and run the project using the simulator or a connected device.
+3. Once the project is opened in Xcode.
+4. Build and run the project using the simulator or a connected device.
 
 <br>
 <br>
 
 ## Dependencies
 
-The ios-stationclub repository required no dependencies. I don't manage to add any third party libraries so for, only native `swift` code.
+The ios-stationclub repository required no dependencies. I don't manage to add any third-party libraries so far, only native `swift` code.
 
 <br>
 <br>
@@ -56,17 +54,12 @@ The ios-stationclub repository required no dependencies. I don't manage to add a
 Contributions to the ios-stationclub repository are welcome! If you would like to contribute, please follow these steps:
 
 1. Fork the repository.
-
 2. Create a new branch for your feature or bug fix:
-
 ```bash
 git checkout -b feature/my-feature
 ```
-
 3. Make your changes and commit them with descriptive commit messages.
-
 4. Push your changes to your forked repository.
-
 5. Submit a pull request to the `main` branch of the original repository.
 
 Please ensure that your code follows the existing code style and conventions.
