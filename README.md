@@ -1,4 +1,4 @@
-<img src="/assets/logo.png" height="80">
+<img src="/assets/app-icon.png" height="80">
 
 # ios-stationclub
 
