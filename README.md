@@ -96,9 +96,9 @@ The ios-stationclub repository is released under the [MIT License](LICENSE).
 
 If you have any questions or suggestions regarding the ios-stationclub application, please feel free to contact the project maintainer:
 
-- Name: Salah Khaled
+- Name: [Salah Khaled](Https://www.linkedin.com/in/sala7khaled/)
 - Email: sala7khaled7@gmail.com
-- Linkedin: [sala7khaled](Https://www.linkedin.com/in/sala7khaled/)
+- Website: [linktree/sala7khaled](https://linktr.ee/sala7khaled)
 
 <br>
 <br>
