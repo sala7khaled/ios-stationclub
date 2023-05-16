@@ -1,6 +1,6 @@
 <img src="/assets/app-icon.png" height="80">
 
-# ios-stationclub
+# stationclub
 
 Welcome to the ios-stationclub repository! This repository contains the source code for the iOS application of stationclub, a social networking platform for podcast and radio enthusiasts. With stationclub, users can discover new podcasts and radio stations, connect with other enthusiasts, and share their favorite shows and episodes.
 
