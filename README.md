@@ -1,3 +1,5 @@
+<img src="/assets/app-icon.png" height="120">
+
 # ios-stationclub
 
 Welcome to the ios-stationclub repository! This repository contains the source code for the iOS application of stationclub, a social networking platform for podcast and radio enthusiasts. With stationclub, users can discover new podcasts and radio stations, connect with other enthusiasts, and share their favorite shows and episodes.
@@ -23,7 +25,7 @@ Welcome to the ios-stationclub repository! This repository contains the source c
 
 | Splash | Onboarding | Landing | Sign in |
 | --- | --- | --- | --- |
-| ![Splash](/screenshots/splash.png) | ![Onboarding](/screenshots/onboarding.png) | ![Landing](/screenshots/landing.png) | ![Sign in](/screenshots/sign-in.png) |
+| <img src="/assets/splash.png" height="460"> | <img src="/assets/onboarding.png" height="460"> | <img src="/assets/landing.png" height="460"> | <img src="/assets/sign-in.png" height="460"> |
 
 <br>
 <br>
