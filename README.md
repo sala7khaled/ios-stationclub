@@ -25,7 +25,7 @@ Welcome to the ios-stationclub repository! This repository contains the source c
 
 | Splash | Onboarding | Landing | Sign in |
 | --- | --- | --- | --- |
-| <img src="/assets/splash.png" height="460"> | <img src="/assets/onboarding.png" height="460"> | <img src="/assets/landing.png" height="460"> | <img src="/assets/sign-in.png" height="460"> |
+| <img src="/assets/splash.png" height="400"> | <img src="/assets/onboarding.png" height="400"> | <img src="/assets/landing.png" height="400"> | <img src="/assets/sign-in.png" height="400"> |
 
 <br>
 <br>
