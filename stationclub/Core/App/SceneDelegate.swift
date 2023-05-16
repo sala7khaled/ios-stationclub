@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        RootRouter.presentRootScreen(in: window, vc: SplashRouter.assembleModule())
+        RootRouter.presentRootScreen(in: window, vc: SignInRouter.assembleModule())
         Localization.shared.delegate = self
 
         checkReachability()

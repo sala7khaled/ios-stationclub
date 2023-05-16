@@ -25,7 +25,7 @@ public class AppTabBarController: UITabBarController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-//        setValue(AppUserTaps(frame: tabBar.frame), forKey: "tabBar")
+        setValue(AppTabBar(frame: tabBar.frame), forKey: "tabBar")
         tabBar.backgroundImage = UIImage()
         tabBar.backgroundColor = .clear
         tabBar.shadowImage = UIImage()
