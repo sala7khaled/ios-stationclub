@@ -11,10 +11,14 @@ public class AppTabBar: UITabBar {
     
     private var shapeLayer: CALayer?
     
+    public override func draw(_ rect: CGRect) {
+        self.addShape()
+    }
+    
     private func addShape() {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = drawPath()
-        shapeLayer.fillColor = UIColor.red.cgColor
+        shapeLayer.fillColor = UIColor.appCell.cgColor
         
         if let oldShapeLayer = self.shapeLayer {
             self.layer.replaceSublayer(oldShapeLayer, with: shapeLayer)
@@ -23,10 +27,6 @@ public class AppTabBar: UITabBar {
         }
         
         self.shapeLayer = shapeLayer
-    }
-    
-    public override func draw(_ rect: CGRect) {
-        self.addShape()
     }
     
     private func drawPath() -> CGPath {

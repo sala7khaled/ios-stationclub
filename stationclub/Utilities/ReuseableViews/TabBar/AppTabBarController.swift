@@ -9,7 +9,7 @@ import UIKit
 //import Core
 
 enum AppUserTaps: Int {
-    case explore = 0, chat, learning, account
+    case home = 0, search, radio, profile
 }
 
 // MARK: - OrcasTabBarController
@@ -17,11 +17,25 @@ enum AppUserTaps: Int {
 public class AppTabBarController: UITabBarController {
     
     private let controllers: [UINavigationController] = [
+        .init(rootViewController: HomeRouter.assembleModule()),
+        .init(rootViewController: LandingRouter.assembleModule()),
         .init(rootViewController: OnboardingRouter.assembleModule()),
-        .init(rootViewController: SignInRouter.assembleModule()),
-        .init(rootViewController: OnboardingRouter.assembleModule()),
-        .init(rootViewController: OnboardingRouter.assembleModule())
+        .init(rootViewController: SignInRouter.assembleModule())
     ]
+    
+    private var tabBarItems: [UIViewController] {
+        var items: [UIViewController] = []
+        for (i, controller) in controllers.enumerated() {
+            let tabBarItem = self.tabBarItem(for: controller,
+                                             icon: Images.tabBarIcon[i],
+                                             selectedIcon: Images.tabBarSelected[i],
+                                             title: String(describing: AppUserTaps(rawValue: i)!).l(),
+                                             tag: AppUserTaps(rawValue: i)!.rawValue)
+            items.append(tabBarItem)
+        }
+        return items
+    }
+    
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,8 +87,8 @@ public class AppTabBarController: UITabBarController {
 //    }
     
     private func configTabBarStyle() {
-        tabBar.unselectedItemTintColor = .appWhite
-        tabBar.tintColor = .appWhite
+        tabBar.unselectedItemTintColor = .subText
+        tabBar.tintColor = .appBlue
         
         UITabBarItem.appearance().setTitleTextAttributes([
             NSAttributedString.Key.font: UIFont.mediumFont(ofSize: 14)
@@ -91,29 +105,6 @@ public class AppTabBarController: UITabBarController {
 //            ReviewService.shared.requestReview(with: DispatchTime.now() + 4)
 //        }
 //    }
-    
-    private lazy var tabBarItems: [UIViewController] = [
-        tabBarItem(for: controllers[0],
-                   icon: "ic-headphone",
-                   selectedIcon: "ic-headphone",
-                   title: "EXPLORE".l(),
-                   tag: AppUserTaps.explore.rawValue),
-        tabBarItem(for: controllers[1],
-                   icon: "ic-headphone",
-                   selectedIcon: "ic-headphone",
-                   title: "ic-headphone".l(),
-                   tag: AppUserTaps.chat.rawValue),
-        tabBarItem(for: controllers[2],
-                   icon: "ic-headphone",
-                   selectedIcon: "ic-headphone",
-                   title: "LEARNING".l(),
-                   tag: AppUserTaps.learning.rawValue),
-        tabBarItem(for: controllers[3],
-                   icon: "ic-headphone",
-                   selectedIcon: "ic-headphone",
-                   title: "ACCOUNT".l(),
-                   tag: AppUserTaps.account.rawValue)
-    ]
     
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()

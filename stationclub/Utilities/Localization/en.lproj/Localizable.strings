@@ -64,9 +64,16 @@
 "invalid_password" = "Password should be more than or equal 8 characters.";
 
 
-// MARK: HOME
+// MARK: TAB BAR
 
 "home" = "Home";
+"search" = "Search";
+"radio" = "Radio";
+"profile" = "Profile";
+
+
+// MARK: HOME
+
 "join" = "Join";
 "favourites" = "Favourites";
 "notifications" = "Notifications";

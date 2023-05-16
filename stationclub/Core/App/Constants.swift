@@ -34,6 +34,8 @@ enum Images {
     static let option = "ic-option"
     static let share = "ic-share"
     static let onboarding = ["onboard-1", "onboard-2", "onboard-3", "onboard-4"]
+    static let tabBarIcon = ["ic-tab-1", "ic-tab-2", "ic-tab-3", "ic-tab-4"]
+    static let tabBarSelected = ["ic-tint-tab-1", "ic-tint-tab-2", "ic-tint-tab-3", "ic-tint-tab-4"]
     static let nextArrow = "ic-arrow-next"
     static let podcast = "ic-podcast"
     static let placeHolder = "ic-place-holder"

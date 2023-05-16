@@ -59,14 +59,21 @@
 "enter_password" = "ادخل كلمة المرور";
 "empty_password" = "حقل كلمة المرور فارغ، من فضلك ادخل كلمة مرورك.";
 "forget_your_password" = "هل نسيت كلمة المرور؟";
+"invalid_email" = "البريد الإلكتروني الذي أدخلته ليس صالحًا";
 "invalid_username" = "اسم المستخدم يجب ان يكون اكثر أو يساوي ٣ حروف";
 "invalid_password" = "كلمة المرور يجب ان تكون اكثر أو تساوي ٨ حروف";
 
 
+// MARK: TAB BAR
+
+"home" = "الرئيسية";
+"search" = "البحث";
+"radio" = "راديو";
+"profile" = "حسابي";
+
+
 // MARK: HOME
 
-
-"home" = "الصفحة الرئيسية";
 "join" = "الانضمام";
 "favourites" = "المفضلة";
 "notifications" = "الإشعارات";
