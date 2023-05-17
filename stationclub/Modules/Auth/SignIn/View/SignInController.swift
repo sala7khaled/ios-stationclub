@@ -36,7 +36,7 @@ class SignInController: BaseController {
         lblPassword.text = "password".l()
         lblForgetPassword.text = "forget_your_password".l()
         
-        txtFldUsername.placeholder = "enter_email".l()
+        txtFldUsername.placeholder = "enter_username".l()
         txtFldPassword.placeholder = "enter_password".l()
         
         #warning("Dummy credential")

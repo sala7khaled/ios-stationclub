@@ -52,9 +52,10 @@ public class AppTabBarController: UITabBarController {
     private var tabBarItems: [UIViewController] {
         var items: [UIViewController] = []
         
-        
         Tab.allCases.forEach { tab in
-            let tabBarItem = self.tabBarItem(for: tab.viewController,
+            let tabBarItem = self.tabBarItem(for: RootRouter.createNavController(vc: tab.viewController,
+                                                                                 title: tab.title,
+                                                                                 icon: tab.icon),
                                              icon: tab.icon,
                                              selectedIcon: tab.selectedIcon,
                                              title: tab.title,
