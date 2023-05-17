@@ -22,7 +22,7 @@ class FloatTabBarController: UITabBarController {
     }
     
     enum TabTitle {
-        static let tab1 = "home"
+        static let tab1 = "home".l()
         static let tab2 = "Station"
         static let tab3 = "Podcast"
         static let tab4 = "Setting"

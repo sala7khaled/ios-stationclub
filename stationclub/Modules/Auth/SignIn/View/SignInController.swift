@@ -39,7 +39,7 @@ class SignInController: BaseController {
         txtFldUsername.placeholder = "enter_email".l()
         txtFldPassword.placeholder = "enter_password".l()
         
-        #warning("Test")
+        #warning("Dummy credential")
         txtFldUsername.text = "acharlota"
         txtFldPassword.text = "M9lbMdydMN"
         

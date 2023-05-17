@@ -20,7 +20,7 @@ class RootRouter {
     }
     
     static func presentRootTab() {
-        #warning("Test Tab Bar")
+        #warning("Testing tab bar")
 //        presentRoot(FloatTabBarController())
         presentRoot(AppTabBarController())
     }
@@ -39,6 +39,14 @@ class RootRouter {
             .first { $0.isKeyWindow }
         window?.makeKeyAndVisible()
         window?.rootViewController = vc
+    }
+    
+    static func createNavController(vc: UIViewController, title: String, icon: String) -> UINavigationController {
+        vc.navigationItem.title = title
+        let nav = NavController(rootViewController: vc)
+        nav.tabBarItem.title = title
+        nav.tabBarItem.image = UIImage(systemName: icon)
+        return nav
     }
     
     static func resetApp() {
