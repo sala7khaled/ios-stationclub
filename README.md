@@ -32,7 +32,7 @@ Welcome to the ios-stationclub repository! This repository contains the source c
 
 ## Architecture
 
-I've used `VIPER` Architecture for better project extension; every component is reusable.
+I've used `viper` architecture because it promotes a clear separation of concerns, allowing for easier maintenance and testing of individual components. `viper`'s modular approach enables scalability, making it simple to add new features or make changes without impacting the entire codebase. Additionally, The architecture emphasis on protocol-oriented programming enhances code reusability.
 ```mermaid
 graph TD;
     View --> Presenter;
