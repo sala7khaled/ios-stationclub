@@ -42,12 +42,12 @@ class SignInController: BaseController {
         txtFldUsername.delegate = self
         txtFldPassword.delegate = self
         
-//        #warning("Dummy credential")
-//        txtFldUsername.text = "acharlota"
-//        txtFldPassword.text = "M9lbMdydMN"
+        #warning("Dummy credential")
+        txtFldUsername.text = "acharlota"
+        txtFldPassword.text = "M9lbMdydMN"
         
         btnSignIn.setTitle("sign_in")
-        btnSignIn.setStatus(.inactive)
+//        btnSignIn.setStatus(.inactive)
         
         txtFldUsername.roles = [
             RegExRole(errorMessage: "empty_username".l(), validate: Validator.shared.isNotEmpty),
@@ -81,46 +81,12 @@ class SignInController: BaseController {
 
 extension SignInController: UITextFieldDelegate {
     
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//
-//    }
-    
-//    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
-//        if txtFldUsername.validate() == true && txtFldPassword.validate() == true {
-//            btnSignIn.setStatus(.active)
-//        } else {
-//            btnSignIn.setStatus(.inactive)
-//        }
-//    }
-//
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//
-//
-//        return true
-//    }
-    
-    func textFieldDidChangeSelection(_ textField: UITextField) {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        _ = (textField as! AppTextField).validate()
+    }
 
-//        if txtFldUsername.isValid && txtFldPassword.isValid {
-//            btnSignIn.setStatus(.active)
-//        } else {
-//            btnSignIn.setStatus(.inactive)
-//        }
-        
-        
-        if txtFldUsername.validate() == false || txtFldPassword.validate() == false {
-            btnSignIn.setStatus(.inactive)
-        } else if txtFldUsername.validate() == true && txtFldPassword.validate() == true {
-            btnSignIn.setStatus(.active)
-        }
-        
-//
-//        if !txtFldUsername.isValid || !txtFldPassword.isValid  {
-//            btnSignIn.setStatus(.inactive)
-//        } else if txtFldUsername.isValid && txtFldPassword.isValid  {
-//            btnSignIn.setStatus(.active)
-//        }
-        
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        (textField as! AppTextField).isValid = true
     }
 }
 
