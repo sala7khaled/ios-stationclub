@@ -9,16 +9,16 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Figtree-Light.ttf</string>
-		<string>Figtree-LightItalic.ttf</string>
-		<string>Figtree-Regular.ttf</string>
-		<string>Figtree-Italic.ttf</string>
-		<string>Figtree-Medium.ttf</string>
-		<string>Figtree-MediumItalic.ttf</string>
-		<string>Figtree-Bold.ttf</string>
-		<string>Figtree-BoldItalic.ttf</string>
-		<string>Figtree-Black.ttf</string>
-		<string>Figtree-BlackItalic.ttf</string>
+		<string>AlbertSans-Light.otf</string>
+		<string>AlbertSans-LightItalic.otf</string>
+		<string>AlbertSans-Regular.otf</string>
+		<string>AlbertSans-Italic.otf</string>
+		<string>AlbertSans-Medium.otf</string>
+		<string>AlbertSans-MediumItalic.otf</string>
+		<string>AlbertSans-Bold.otf</string>
+		<string>AlbertSans-BoldItalic.otf</string>
+		<string>AlbertSans-Black.otf</string>
+		<string>AlbertSans-BlackItalic.otf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

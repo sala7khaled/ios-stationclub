@@ -67,38 +67,38 @@ struct AppFontName {
 
 struct AppFontNameEn {
     
-    static let light = "Figtree-Light"
-    static let lightItalic = "Figtree-LightItalic"
+    static let light = "AlbertSans-Light"
+    static let lightItalic = "AlbertSans-LightItalic"
     
-    static let regular = "Figtree-Regular"
-    static let regularItalic = "Figtree-Italic"
+    static let regular = "AlbertSans-Regular"
+    static let regularItalic = "AlbertSans-Italic"
     
-    static let medium = "Figtree-Medium"
-    static let mediumItalic = "Figtree-MediumItalic"
+    static let medium = "AlbertSans-Medium"
+    static let mediumItalic = "AlbertSans-MediumItalic"
     
-    static let bold = "Figtree-Bold"
-    static let boldItalic = "Figtree-BoldItalic"
+    static let bold = "AlbertSans-Bold"
+    static let boldItalic = "AlbertSans-BoldItalic"
     
-    static let black = "Figtree-Black"
-    static let blackItalic = "Figtree-BlackItalic"
+    static let black = "AlbertSans-Black"
+    static let blackItalic = "AlbertSans-BlackItalic"
 }
 
 struct AppFontNameAr {
     
-    static let light = "Figtree-Light"
-    static let lightItalic = "Figtree-LightItalic"
+    static let light = "AlbertSans-Light"
+    static let lightItalic = "AlbertSans-LightItalic"
     
-    static let regular = "Figtree-Regular"
-    static let regularItalic = "Figtree-Italic"
+    static let regular = "AlbertSans-Regular"
+    static let regularItalic = "AlbertSans-Italic"
     
-    static let medium = "Figtree-Medium"
-    static let mediumItalic = "Figtree-MediumItalic"
+    static let medium = "AlbertSans-Medium"
+    static let mediumItalic = "AlbertSans-MediumItalic"
     
-    static let bold = "Figtree-Bold"
-    static let boldItalic = "Figtree-BoldItalic"
+    static let bold = "AlbertSans-Bold"
+    static let boldItalic = "AlbertSans-BoldItalic"
     
-    static let black = "Figtree-Black"
-    static let blackItalic = "Figtree-BlackItalic"
+    static let black = "AlbertSans-Black"
+    static let blackItalic = "AlbertSans-BlackItalic"
 }
 
 extension UIFontDescriptor.AttributeName {
