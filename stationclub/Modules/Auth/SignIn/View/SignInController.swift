@@ -67,9 +67,9 @@ class SignInController: BaseController {
     
     @IBAction func btnLogInClicked(_ sender: Any) {
         
-        if txtFldUsername.validate() == false {
+        if !txtFldUsername.validate() {
             presenter.showError(txtFldUsername.errorMessage ?? "")
-        } else if txtFldPassword.validate() == false {
+        } else if !txtFldPassword.validate() {
             presenter.showError(txtFldPassword.errorMessage ?? "")
         } else {
             let signForm = SignForm(username: txtFldUsername.text!, password: txtFldPassword.text!)
@@ -101,11 +101,26 @@ extension SignInController: UITextFieldDelegate {
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
 
-        if !txtFldUsername.isValid || !txtFldPassword.isValid {
+//        if txtFldUsername.isValid && txtFldPassword.isValid {
+//            btnSignIn.setStatus(.active)
+//        } else {
+//            btnSignIn.setStatus(.inactive)
+//        }
+        
+        
+        if txtFldUsername.validate() == false || txtFldPassword.validate() == false {
             btnSignIn.setStatus(.inactive)
-        } else {
+        } else if txtFldUsername.validate() == true && txtFldPassword.validate() == true {
             btnSignIn.setStatus(.active)
         }
+        
+//
+//        if !txtFldUsername.isValid || !txtFldPassword.isValid  {
+//            btnSignIn.setStatus(.inactive)
+//        } else if txtFldUsername.isValid && txtFldPassword.isValid  {
+//            btnSignIn.setStatus(.active)
+//        }
+        
     }
 }
 

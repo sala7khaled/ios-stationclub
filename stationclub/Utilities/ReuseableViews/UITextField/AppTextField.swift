@@ -21,7 +21,7 @@ class AppTextField: UITextField {
     var roles: [RegExRole]?
     var errorMessage: String?
     
-    var isValid = false {
+    var isValid = true {
         didSet {
             self.layer.borderColor = isValid ? borderColor : borderErrorColor
         }
@@ -58,7 +58,7 @@ class AppTextField: UITextField {
     }
     
     func validate() -> Bool {
-        isValid = false
+        isValid = true
         errorMessage = nil
         
         if let roles = roles {
