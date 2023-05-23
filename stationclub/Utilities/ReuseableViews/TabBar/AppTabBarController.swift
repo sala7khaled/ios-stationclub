@@ -10,7 +10,7 @@ import UIKit
 extension AppTabBarController {
     
     enum Tab: Int, CaseIterable {
-        case home = 0, search, radio, profile
+        case explore = 0, search, profile
         
         var title: String {
             return String(describing: self).l()
@@ -26,11 +26,9 @@ extension AppTabBarController {
         
         var viewController: UIViewController {
             switch self {
-            case .home:
+            case .explore:
                 return HomeRouter.assembleModule()
             case .search:
-                return OnboardingRouter.assembleModule()
-            case .radio:
                 return OnboardingRouter.assembleModule()
             case .profile:
                 return OnboardingRouter.assembleModule()

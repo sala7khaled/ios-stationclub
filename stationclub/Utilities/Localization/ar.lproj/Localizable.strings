@@ -66,9 +66,8 @@
 
 // MARK: TAB BAR
 
-"home" = "الرئيسية";
+"explore" = "الرئيسية";
 "search" = "البحث";
-"radio" = "راديو";
 "profile" = "حسابي";
 
 

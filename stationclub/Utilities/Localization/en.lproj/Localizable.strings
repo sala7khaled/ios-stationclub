@@ -66,9 +66,8 @@
 
 // MARK: TAB BAR
 
-"home" = "Home";
+"explore" = "Explore";
 "search" = "Search";
-"radio" = "Radio";
 "profile" = "Profile";
 
 
