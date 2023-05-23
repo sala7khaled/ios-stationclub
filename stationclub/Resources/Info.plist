@@ -9,16 +9,16 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Satoshi-Light.otf</string>
-		<string>Satoshi-LightItalic.otf</string>
-		<string>Satoshi-Regular.otf</string>
-		<string>Satoshi-RegularItalic.otf</string>
-		<string>Satoshi-Medium.otf</string>
-		<string>Satoshi-MediumItalic.otf</string>
-		<string>Satoshi-Bold.otf</string>
-		<string>Satoshi-BoldItalic.otf</string>
-		<string>Satoshi-Black.otf</string>
-		<string>Satoshi-BlackItalic.otf</string>
+		<string>Figtree-Light.ttf</string>
+		<string>Figtree-LightItalic.ttf</string>
+		<string>Figtree-Regular.ttf</string>
+		<string>Figtree-Italic.ttf</string>
+		<string>Figtree-Medium.ttf</string>
+		<string>Figtree-MediumItalic.ttf</string>
+		<string>Figtree-Bold.ttf</string>
+		<string>Figtree-BoldItalic.ttf</string>
+		<string>Figtree-Black.ttf</string>
+		<string>Figtree-BlackItalic.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

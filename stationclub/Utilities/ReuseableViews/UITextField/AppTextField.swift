@@ -13,12 +13,15 @@ class AppTextField: UITextField {
     var borderColor = UIColor.clear.cgColor
     let borderErrorColor = UIColor.appRed.cgColor
     
+    let cornerRadius : CGFloat = 8
+    let borderWidth : CGFloat = 1
+    
     let padding = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
     
     var roles: [RegExRole]?
     var errorMessage: String?
     
-    var isValid = true {
+    var isValid = false {
         didSet {
             self.layer.borderColor = isValid ? borderColor : borderErrorColor
         }
@@ -35,8 +38,8 @@ class AppTextField: UITextField {
     }
     
     private func configure() {
-        layer.cornerRadius = 8
-        layer.borderWidth = 1
+        layer.cornerRadius = cornerRadius
+        layer.borderWidth = borderWidth
         layer.borderColor = borderColor
         clipsToBounds = true
         localize()
@@ -55,7 +58,7 @@ class AppTextField: UITextField {
     }
     
     func validate() -> Bool {
-        isValid = true
+        isValid = false
         errorMessage = nil
         
         if let roles = roles {

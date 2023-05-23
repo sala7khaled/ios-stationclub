@@ -39,12 +39,15 @@ class SignInController: BaseController {
         txtFldUsername.placeholder = "enter_username".l()
         txtFldPassword.placeholder = "enter_password".l()
         
-        #warning("Dummy credential")
-        txtFldUsername.text = "acharlota"
-        txtFldPassword.text = "M9lbMdydMN"
+        txtFldUsername.delegate = self
+        txtFldPassword.delegate = self
+        
+//        #warning("Dummy credential")
+//        txtFldUsername.text = "acharlota"
+//        txtFldPassword.text = "M9lbMdydMN"
         
         btnSignIn.setTitle("sign_in")
-//        btnNext.setStatus(.inactive)
+        btnSignIn.setStatus(.inactive)
         
         txtFldUsername.roles = [
             RegExRole(errorMessage: "empty_username".l(), validate: Validator.shared.isNotEmpty),
@@ -71,6 +74,37 @@ class SignInController: BaseController {
         } else {
             let signForm = SignForm(username: txtFldUsername.text!, password: txtFldPassword.text!)
             presenter.didClickedLogin(signForm: signForm)
+        }
+    }
+    
+}
+
+extension SignInController: UITextFieldDelegate {
+    
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//
+//    }
+    
+//    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+//        if txtFldUsername.validate() == true && txtFldPassword.validate() == true {
+//            btnSignIn.setStatus(.active)
+//        } else {
+//            btnSignIn.setStatus(.inactive)
+//        }
+//    }
+//
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//
+//
+//        return true
+//    }
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+
+        if !txtFldUsername.isValid || !txtFldPassword.isValid {
+            btnSignIn.setStatus(.inactive)
+        } else {
+            btnSignIn.setStatus(.active)
         }
     }
 }

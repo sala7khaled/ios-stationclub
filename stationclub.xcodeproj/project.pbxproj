@@ -120,16 +120,6 @@
 		880C7B4E299E6B2400998F15 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7B4C299E6B2400998F15 /* OnboardingController.swift */; };
 		880C7B51299E6B3400998F15 /* OnboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7B4F299E6B3400998F15 /* OnboardCell.swift */; };
 		880C7B52299E6B3400998F15 /* OnboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880C7B50299E6B3400998F15 /* OnboardCell.xib */; };
-		882A1F8129DD74B0000F76E6 /* Satoshi-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 882A1F7729DD74AF000F76E6 /* Satoshi-LightItalic.otf */; };
-		882A1F8229DD74B0000F76E6 /* Satoshi-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 882A1F7829DD74AF000F76E6 /* Satoshi-Medium.otf */; };
-		882A1F8329DD74B0000F76E6 /* Satoshi-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 882A1F7929DD74AF000F76E6 /* Satoshi-BoldItalic.otf */; };
-		882A1F8429DD74B0000F76E6 /* Satoshi-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 882A1F7A29DD74AF000F76E6 /* Satoshi-Light.otf */; };
-		882A1F8529DD74B0000F76E6 /* Satoshi-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 882A1F7B29DD74AF000F76E6 /* Satoshi-MediumItalic.otf */; };
-		882A1F8629DD74B0000F76E6 /* Satoshi-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 882A1F7C29DD74AF000F76E6 /* Satoshi-Regular.otf */; };
-		882A1F8729DD74B0000F76E6 /* Satoshi-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 882A1F7D29DD74AF000F76E6 /* Satoshi-Bold.otf */; };
-		882A1F8829DD74B0000F76E6 /* Satoshi-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 882A1F7E29DD74AF000F76E6 /* Satoshi-BlackItalic.otf */; };
-		882A1F8929DD74B0000F76E6 /* Satoshi-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 882A1F7F29DD74B0000F76E6 /* Satoshi-Italic.otf */; };
-		882A1F8A29DD74B0000F76E6 /* Satoshi-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 882A1F8029DD74B0000F76E6 /* Satoshi-Black.otf */; };
 		882A1F9729DD7B47000F76E6 /* StationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A1F9629DD7B47000F76E6 /* StationContract.swift */; };
 		882A1F9929DD7B4E000F76E6 /* StationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A1F9829DD7B4E000F76E6 /* StationInteractor.swift */; };
 		882A1F9B29DD7B53000F76E6 /* StationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A1F9A29DD7B53000F76E6 /* StationPresenter.swift */; };
@@ -163,6 +153,16 @@
 		88A6284529A6019D00A53AE5 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A6284429A6019D00A53AE5 /* SignInRouter.swift */; };
 		88A6284829A601A700A53AE5 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A6284629A601A700A53AE5 /* SignInController.swift */; };
 		88A6284929A601A700A53AE5 /* SignInController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A6284729A601A700A53AE5 /* SignInController.xib */; };
+		88A6C24C2A1B95E700C8678D /* Figtree-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88A6C2422A1B95E700C8678D /* Figtree-Light.ttf */; };
+		88A6C24D2A1B95E700C8678D /* Figtree-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88A6C2432A1B95E700C8678D /* Figtree-LightItalic.ttf */; };
+		88A6C24E2A1B95E700C8678D /* Figtree-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88A6C2442A1B95E700C8678D /* Figtree-MediumItalic.ttf */; };
+		88A6C24F2A1B95E700C8678D /* Figtree-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88A6C2452A1B95E700C8678D /* Figtree-Regular.ttf */; };
+		88A6C2502A1B95E700C8678D /* Figtree-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88A6C2462A1B95E700C8678D /* Figtree-Italic.ttf */; };
+		88A6C2512A1B95E700C8678D /* Figtree-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88A6C2472A1B95E700C8678D /* Figtree-Bold.ttf */; };
+		88A6C2522A1B95E700C8678D /* Figtree-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88A6C2482A1B95E700C8678D /* Figtree-BlackItalic.ttf */; };
+		88A6C2532A1B95E700C8678D /* Figtree-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88A6C2492A1B95E700C8678D /* Figtree-Black.ttf */; };
+		88A6C2542A1B95E700C8678D /* Figtree-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88A6C24A2A1B95E700C8678D /* Figtree-BoldItalic.ttf */; };
+		88A6C2552A1B95E700C8678D /* Figtree-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88A6C24B2A1B95E700C8678D /* Figtree-Medium.ttf */; };
 		88C166B029E561F700F9C82F /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C166AE29E561F700F9C82F /* TagCell.swift */; };
 		88C166B129E561F700F9C82F /* TagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C166AF29E561F700F9C82F /* TagCell.xib */; };
 		88C3987529A39B69004CCEB1 /* CustomAlertEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C3987429A39B69004CCEB1 /* CustomAlertEntity.swift */; };
@@ -306,16 +306,6 @@
 		880C7B4C299E6B2400998F15 /* OnboardingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		880C7B4F299E6B3400998F15 /* OnboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardCell.swift; sourceTree = "<group>"; };
 		880C7B50299E6B3400998F15 /* OnboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardCell.xib; sourceTree = "<group>"; };
-		882A1F7729DD74AF000F76E6 /* Satoshi-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-LightItalic.otf"; sourceTree = "<group>"; };
-		882A1F7829DD74AF000F76E6 /* Satoshi-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.otf"; sourceTree = "<group>"; };
-		882A1F7929DD74AF000F76E6 /* Satoshi-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BoldItalic.otf"; sourceTree = "<group>"; };
-		882A1F7A29DD74AF000F76E6 /* Satoshi-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Light.otf"; sourceTree = "<group>"; };
-		882A1F7B29DD74AF000F76E6 /* Satoshi-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-MediumItalic.otf"; sourceTree = "<group>"; };
-		882A1F7C29DD74AF000F76E6 /* Satoshi-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.otf"; sourceTree = "<group>"; };
-		882A1F7D29DD74AF000F76E6 /* Satoshi-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.otf"; sourceTree = "<group>"; };
-		882A1F7E29DD74AF000F76E6 /* Satoshi-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BlackItalic.otf"; sourceTree = "<group>"; };
-		882A1F7F29DD74B0000F76E6 /* Satoshi-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Italic.otf"; sourceTree = "<group>"; };
-		882A1F8029DD74B0000F76E6 /* Satoshi-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Black.otf"; sourceTree = "<group>"; };
 		882A1F9629DD7B47000F76E6 /* StationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationContract.swift; sourceTree = "<group>"; };
 		882A1F9829DD7B4E000F76E6 /* StationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationInteractor.swift; sourceTree = "<group>"; };
 		882A1F9A29DD7B53000F76E6 /* StationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPresenter.swift; sourceTree = "<group>"; };
@@ -349,6 +339,16 @@
 		88A6284429A6019D00A53AE5 /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
 		88A6284629A601A700A53AE5 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		88A6284729A601A700A53AE5 /* SignInController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInController.xib; sourceTree = "<group>"; };
+		88A6C2422A1B95E700C8678D /* Figtree-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-Light.ttf"; sourceTree = "<group>"; };
+		88A6C2432A1B95E700C8678D /* Figtree-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-LightItalic.ttf"; sourceTree = "<group>"; };
+		88A6C2442A1B95E700C8678D /* Figtree-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-MediumItalic.ttf"; sourceTree = "<group>"; };
+		88A6C2452A1B95E700C8678D /* Figtree-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-Regular.ttf"; sourceTree = "<group>"; };
+		88A6C2462A1B95E700C8678D /* Figtree-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-Italic.ttf"; sourceTree = "<group>"; };
+		88A6C2472A1B95E700C8678D /* Figtree-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-Bold.ttf"; sourceTree = "<group>"; };
+		88A6C2482A1B95E700C8678D /* Figtree-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-BlackItalic.ttf"; sourceTree = "<group>"; };
+		88A6C2492A1B95E700C8678D /* Figtree-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-Black.ttf"; sourceTree = "<group>"; };
+		88A6C24A2A1B95E700C8678D /* Figtree-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-BoldItalic.ttf"; sourceTree = "<group>"; };
+		88A6C24B2A1B95E700C8678D /* Figtree-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-Medium.ttf"; sourceTree = "<group>"; };
 		88C166AE29E561F700F9C82F /* TagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
 		88C166AF29E561F700F9C82F /* TagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCell.xib; sourceTree = "<group>"; };
 		88C3987429A39B69004CCEB1 /* CustomAlertEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertEntity.swift; sourceTree = "<group>"; };
@@ -1048,16 +1048,16 @@
 		880C7AAB299E291B00998F15 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				882A1F8029DD74B0000F76E6 /* Satoshi-Black.otf */,
-				882A1F7E29DD74AF000F76E6 /* Satoshi-BlackItalic.otf */,
-				882A1F7D29DD74AF000F76E6 /* Satoshi-Bold.otf */,
-				882A1F7929DD74AF000F76E6 /* Satoshi-BoldItalic.otf */,
-				882A1F7F29DD74B0000F76E6 /* Satoshi-Italic.otf */,
-				882A1F7A29DD74AF000F76E6 /* Satoshi-Light.otf */,
-				882A1F7729DD74AF000F76E6 /* Satoshi-LightItalic.otf */,
-				882A1F7829DD74AF000F76E6 /* Satoshi-Medium.otf */,
-				882A1F7B29DD74AF000F76E6 /* Satoshi-MediumItalic.otf */,
-				882A1F7C29DD74AF000F76E6 /* Satoshi-Regular.otf */,
+				88A6C2492A1B95E700C8678D /* Figtree-Black.ttf */,
+				88A6C2482A1B95E700C8678D /* Figtree-BlackItalic.ttf */,
+				88A6C2472A1B95E700C8678D /* Figtree-Bold.ttf */,
+				88A6C24A2A1B95E700C8678D /* Figtree-BoldItalic.ttf */,
+				88A6C2462A1B95E700C8678D /* Figtree-Italic.ttf */,
+				88A6C2422A1B95E700C8678D /* Figtree-Light.ttf */,
+				88A6C2432A1B95E700C8678D /* Figtree-LightItalic.ttf */,
+				88A6C24B2A1B95E700C8678D /* Figtree-Medium.ttf */,
+				88A6C2442A1B95E700C8678D /* Figtree-MediumItalic.ttf */,
+				88A6C2452A1B95E700C8678D /* Figtree-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -1670,37 +1670,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				882A1F8729DD74B0000F76E6 /* Satoshi-Bold.otf in Resources */,
-				882A1F8A29DD74B0000F76E6 /* Satoshi-Black.otf in Resources */,
+				88A6C2542A1B95E700C8678D /* Figtree-BoldItalic.ttf in Resources */,
 				880C7B4D299E6B2400998F15 /* OnboardingController.xib in Resources */,
+				88A6C24D2A1B95E700C8678D /* Figtree-LightItalic.ttf in Resources */,
 				880C7B52299E6B3400998F15 /* OnboardCell.xib in Resources */,
+				88A6C2502A1B95E700C8678D /* Figtree-Italic.ttf in Resources */,
 				880C79FB299E1FF800998F15 /* LaunchScreen.storyboard in Resources */,
 				88C6356129AB3AFF0072C1FF /* FeaturedCell.xib in Resources */,
+				88A6C2532A1B95E700C8678D /* Figtree-Black.ttf in Resources */,
+				88A6C24C2A1B95E700C8678D /* Figtree-Light.ttf in Resources */,
+				88A6C24E2A1B95E700C8678D /* Figtree-MediumItalic.ttf in Resources */,
 				88C166B129E561F700F9C82F /* TagCell.xib in Resources */,
-				882A1F8529DD74B0000F76E6 /* Satoshi-MediumItalic.otf in Resources */,
+				88A6C2522A1B95E700C8678D /* Figtree-BlackItalic.ttf in Resources */,
 				880C7AC1299E2A1B00998F15 /* Colors.xcassets in Resources */,
 				882A1FB529DD7C11000F76E6 /* PodcastController.xib in Resources */,
 				8855190B29A20D0800B8282A /* SplashController.xib in Resources */,
-				882A1F8229DD74B0000F76E6 /* Satoshi-Medium.otf in Resources */,
 				88A6284929A601A700A53AE5 /* SignInController.xib in Resources */,
-				882A1F8829DD74B0000F76E6 /* Satoshi-BlackItalic.otf in Resources */,
+				88A6C2512A1B95E700C8678D /* Figtree-Bold.ttf in Resources */,
 				880C7AD8299E2B4D00998F15 /* Localizable.strings in Resources */,
 				880C7AEA299E2C4A00998F15 /* LoadingController.xib in Resources */,
+				88A6C24F2A1B95E700C8678D /* Figtree-Regular.ttf in Resources */,
 				880C79F8299E1FF800998F15 /* Assets.xcassets in Resources */,
 				88DF70D929E578DC00673316 /* GuestCell.xib in Resources */,
-				882A1F8129DD74B0000F76E6 /* Satoshi-LightItalic.otf in Resources */,
 				882A1FA129DD7B6B000F76E6 /* StationController.xib in Resources */,
-				882A1F8929DD74B0000F76E6 /* Satoshi-Italic.otf in Resources */,
 				880C7B0D299E2DE600998F15 /* LocationPickerController.xib in Resources */,
 				880C7ADF299E2C1400998F15 /* CustomAlertController.xib in Resources */,
-				882A1F8429DD74B0000F76E6 /* Satoshi-Light.otf in Resources */,
 				88C6355429AB3A270072C1FF /* HomeController.xib in Resources */,
 				88C6356929AB3B180072C1FF /* StationCell.xib in Resources */,
-				882A1F8329DD74B0000F76E6 /* Satoshi-BoldItalic.otf in Resources */,
 				8855191D29A226C500B8282A /* LandingController.xib in Resources */,
+				88A6C2552A1B95E700C8678D /* Figtree-Medium.ttf in Resources */,
 				88C6356529AB3B0A0072C1FF /* HeaderCell.xib in Resources */,
 				880C7AE3299E2C2300998F15 /* EmptyScreenController.xib in Resources */,
-				882A1F8629DD74B0000F76E6 /* Satoshi-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -67,38 +67,38 @@ struct AppFontName {
 
 struct AppFontNameEn {
     
-    static let light = "Satoshi-Light"
-    static let lightItalic = "Satoshi-LightItalic"
+    static let light = "Figtree-Light"
+    static let lightItalic = "Figtree-LightItalic"
     
-    static let regular = "Satoshi-Regular"
-    static let regularItalic = "Satoshi-RegularItalic"
+    static let regular = "Figtree-Regular"
+    static let regularItalic = "Figtree-Italic"
     
-    static let medium = "Satoshi-Medium"
-    static let mediumItalic = "Satoshi-MediumItalic"
+    static let medium = "Figtree-Medium"
+    static let mediumItalic = "Figtree-MediumItalic"
     
-    static let bold = "Satoshi-Bold"
-    static let boldItalic = "Satoshi-BoldItalic"
+    static let bold = "Figtree-Bold"
+    static let boldItalic = "Figtree-BoldItalic"
     
-    static let black = "Satoshi-Black"
-    static let blackItalic = "Satoshi-BlackItalic"
+    static let black = "Figtree-Black"
+    static let blackItalic = "Figtree-BlackItalic"
 }
 
 struct AppFontNameAr {
     
-    static let light = "Satoshi-Light"
-    static let lightItalic = "Satoshi-LightItalic"
+    static let light = "Figtree-Light"
+    static let lightItalic = "Figtree-LightItalic"
     
-    static let regular = "Satoshi-Regular"
-    static let regularItalic = "Satoshi-RegularItalic"
+    static let regular = "Figtree-Regular"
+    static let regularItalic = "Figtree-Italic"
     
-    static let medium = "Satoshi-Medium"
-    static let mediumItalic = "Satoshi-MediumItalic"
+    static let medium = "Figtree-Medium"
+    static let mediumItalic = "Figtree-MediumItalic"
     
-    static let bold = "Satoshi-Bold"
-    static let boldItalic = "Satoshi-BoldItalic"
+    static let bold = "Figtree-Bold"
+    static let boldItalic = "Figtree-BoldItalic"
     
-    static let black = "Satoshi-Black"
-    static let blackItalic = "Satoshi-BlackItalic"
+    static let black = "Figtree-Black"
+    static let blackItalic = "Figtree-BlackItalic"
 }
 
 extension UIFontDescriptor.AttributeName {

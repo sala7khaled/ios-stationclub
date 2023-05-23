@@ -43,6 +43,7 @@ public class AppTabBarController: UITabBarController {
 
     /// Edit for customization
     let barStyle: UIBarStyle = .black
+    let barHeight: CGFloat = 74
     let selectedColor: UIColor = .appWhite
     let unselectedColor: UIColor = .subText
 
@@ -69,15 +70,15 @@ public class AppTabBarController: UITabBarController {
         super.viewDidLoad()
 
 
-        setValue(UITabBar(frame: tabBar.frame), forKey: "tabBar")
+        setValue(AppTabBar(frame: tabBar.frame), forKey: "tabBar")
         viewControllers = tabBarItems
         tabBar.barStyle = barStyle
 
 //        removeTabBarItemBackground()
         configTabBarStyle()
 //        setupInAppReviewDialog()
-//        addUnAuthorizedObservers()
-//        addNotificationObservers()
+        addUnAuthorizedObservers()
+        addNotificationObservers()
     }
 
     public override func viewWillAppear(_ animated: Bool) {
@@ -89,30 +90,36 @@ public class AppTabBarController: UITabBarController {
         NotificationCenter.default.removeObserver(self)
     }
 
-//    private func addUnAuthorizedObservers() {
-//        NotificationCenter.default.addObserver(self, selector: #selector(self.catchUnAuthorized), name: NSNotification.Name(rawValue: "UnAuthorizedHandler"), object: nil)
-//    }
+    private func addUnAuthorizedObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.catchUnAuthorized), name: NSNotification.Name(rawValue: "UnAuthorizedHandler"), object: nil)
+    }
 
-//    private func addNotificationObservers() {
-//        NotificationCenter.default.addObserver(self, selector: #selector(self.catchIt), name: NSNotification.Name(rawValue: "NotificationHandler"), object: nil)
-//    }
+    private func addNotificationObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.catchIt), name: NSNotification.Name(rawValue: "NotificationHandler"), object: nil)
+    }
 
     @objc func catchUnAuthorized(_ userInfo: Notification) {
-//        RealmManager.deleteUserData()
         restAppRoot()
     }
 
     private func restAppRoot() {
-//        appDelegate?.userLoggedout()
+        UserRepo().logOut()
     }
 
-//    @objc func catchIt(_ userInfo: Notification) {
+    @objc func catchIt(_ userInfo: Notification) {
+        print("Deep link navigation should active now.")
 //        if let action = userInfo.userInfo?["action"] as? String,
 //           let  url = URL.init(string: action.replacingOccurrences(of: "orcas_user", with: "orcas-user").replacingOccurrences(of: "//", with: "")),
 //           let vc = DeepLinkNavigator.sharedInstance.getViewController(with: url) {
 //            self.navigationController?.pushViewController(vc, animated: true)
 //        }
-//    }
+    }
+    
+    private func removeTabBarItemBackground() {
+        tabBar.backgroundColor = .clear
+        tabBar.backgroundImage = UIImage()
+        tabBar.shadowImage = UIImage()
+    }
 
     private func configTabBarStyle() {
         tabBar.unselectedItemTintColor = unselectedColor
@@ -127,18 +134,13 @@ public class AppTabBarController: UITabBarController {
         ], for: .selected)
     }
 
-    private func removeTabBarItemBackground() {
-        tabBar.backgroundColor = .clear
-        tabBar.backgroundImage = UIImage()
-        tabBar.shadowImage = UIImage()
-    }
 
-//    private func setupInAppReviewDialog() {
+    private func setupInAppReviewDialog() {
 //        if let shouldShowReviewDialoge =  UserDef.shouldShowReviewDialogWhenReopenApp,
 //           shouldShowReviewDialoge == true {
 //            ReviewService.shared.requestReview(with: DispatchTime.now() + 4)
 //        }
-//    }
+    }
 
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -148,11 +150,10 @@ public class AppTabBarController: UITabBarController {
             safeAreaBottomInset = view.safeAreaInsets.bottom
         }
 
-        let newTabBarHeight: CGFloat = 86 + safeAreaBottomInset
+        let newTabBarHeight: CGFloat = barHeight + safeAreaBottomInset
         var newFrame = tabBar.frame
         newFrame.size.height = newTabBarHeight
         newFrame.origin.y = view.frame.size.height - newTabBarHeight
-        tabBar.layer.cornerRadius = 50
         tabBar.frame = newFrame
     }
 
@@ -166,8 +167,8 @@ public class AppTabBarController: UITabBarController {
             image: UIImage(named: icon),
             tag: tag)
 
-        item.imageInsets = UIEdgeInsets(top: 18, left: 0, bottom: -18, right: 0)
-        item.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -2.0)
+        item.imageInsets = UIEdgeInsets(top: 2, left: 0, bottom: -2, right: 0)
+        item.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -10.0)
 
         item.selectedImage = UIImage(named: selectedIcon)
 
