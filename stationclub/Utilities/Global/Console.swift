@@ -12,11 +12,11 @@ open class Console {
     
     static func logAPI(_ url: String, _ headers: [String:String], _ body: Any, _ statusCode: Int, _ response: String, _ error: Error?) {
         log("\n-------------------- API Calling Start", "--------------------")
-        log("\n🌐 Url", url)
-        log("\n🧩 Headers", headers)
-        log("\n📦 Body", body)
-        log("\n#️⃣ Status code", statusCode)
-        log("\n📥 Response", response)
+        log("🌐 Url", url)
+        log("🧩 Headers", headers)
+        log("📦 Body", body)
+        log("#️⃣ Status code", statusCode)
+        log("📥 Response", response)
         switch statusCode {
         case 200...299:
             log("\n🏁 State: \(url.replacingOccurrences(of: API.baseUrl, with: ""))", "✅ Success")
@@ -25,7 +25,7 @@ open class Console {
             log("\n🚩 State: \(url.replacingOccurrences(of: API.baseUrl, with: ""))", "❌ Error: \(String(describing: error)) ⏹")
             break
         }
-        log("\n--------------------- API Calling End", "---------------------\n")
+        log("--------------------- API Calling End", "---------------------\n")
     }
 
     static func logError(_ type: APIErrorType) {
@@ -38,4 +38,3 @@ open class Console {
         #endif
     }
 }
-

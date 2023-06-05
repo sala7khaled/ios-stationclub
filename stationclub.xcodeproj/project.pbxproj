@@ -36,7 +36,7 @@
 		880C7A6D299E257C00998F15 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A6C299E257C00998F15 /* AuthService.swift */; };
 		880C7A6F299E259200998F15 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A6E299E259200998F15 /* UserService.swift */; };
 		880C7A71299E25D200998F15 /* URLSessionContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A70299E25D200998F15 /* URLSessionContract.swift */; };
-		880C7A73299E25DC00998F15 /* URLSessionProtocol.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A72299E25DC00998F15 /* URLSessionProtocol.swift.swift */; };
+		880C7A73299E25DC00998F15 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A72299E25DC00998F15 /* URLSessionProtocol.swift */; };
 		880C7A75299E25F000998F15 /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A74299E25F000998F15 /* URLSessionProvider.swift */; };
 		880C7A77299E262000998F15 /* AuthRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A76299E262000998F15 /* AuthRepo.swift */; };
 		880C7A79299E262F00998F15 /* UserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C7A78299E262F00998F15 /* UserRepo.swift */; };
@@ -220,7 +220,7 @@
 		880C7A6C299E257C00998F15 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		880C7A6E299E259200998F15 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		880C7A70299E25D200998F15 /* URLSessionContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionContract.swift; sourceTree = "<group>"; };
-		880C7A72299E25DC00998F15 /* URLSessionProtocol.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift.swift; sourceTree = "<group>"; };
+		880C7A72299E25DC00998F15 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		880C7A74299E25F000998F15 /* URLSessionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
 		880C7A76299E262000998F15 /* AuthRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepo.swift; sourceTree = "<group>"; };
 		880C7A78299E262F00998F15 /* UserRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepo.swift; sourceTree = "<group>"; };
@@ -532,7 +532,7 @@
 			isa = PBXGroup;
 			children = (
 				880C7A70299E25D200998F15 /* URLSessionContract.swift */,
-				880C7A72299E25DC00998F15 /* URLSessionProtocol.swift.swift */,
+				880C7A72299E25DC00998F15 /* URLSessionProtocol.swift */,
 				880C7A74299E25F000998F15 /* URLSessionProvider.swift */,
 			);
 			path = URLSession;
@@ -607,6 +607,7 @@
 		880C7A16299E21B200998F15 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				880C7A1A299E21D000998F15 /* UIFont */,
 				880C7A1D299E21EA00998F15 /* UIButton */,
 				880C7A24299E221E00998F15 /* UICollectionView */,
 				880C7A1B299E21DE00998F15 /* UIColor */,
@@ -625,7 +626,6 @@
 		880C7A17299E21BB00998F15 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				880C7A1A299E21D000998F15 /* Font */,
 				880C7A19299E21CA00998F15 /* UserDefaults */,
 				880C7A18299E21C600998F15 /* String */,
 			);
@@ -650,12 +650,12 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
-		880C7A1A299E21D000998F15 /* Font */ = {
+		880C7A1A299E21D000998F15 /* UIFont */ = {
 			isa = PBXGroup;
 			children = (
 				880C7A7C299E265500998F15 /* UIFont+Extension.swift */,
 			);
-			path = Font;
+			path = UIFont;
 			sourceTree = "<group>";
 		};
 		880C7A1B299E21DE00998F15 /* UIColor */ = {
@@ -1776,7 +1776,7 @@
 				880C7AA2299E27E100998F15 /* BaseEntity.swift in Sources */,
 				880C7A65299E253E00998F15 /* SignForm.swift in Sources */,
 				88663BBE29E559E50012D3FD /* Podcast+Collectionview.swift in Sources */,
-				880C7A73299E25DC00998F15 /* URLSessionProtocol.swift.swift in Sources */,
+				880C7A73299E25DC00998F15 /* URLSessionProtocol.swift in Sources */,
 				88C6356829AB3B180072C1FF /* StationCell.swift in Sources */,
 				880C7B37299E30F300998F15 /* OnboardingPresenter.swift in Sources */,
 				880C7A75299E25F000998F15 /* URLSessionProvider.swift in Sources */,

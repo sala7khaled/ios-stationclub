@@ -105,4 +105,3 @@ class ReachabilityManager {
         return (isReachable && !needsConnection)
     }
 }
-

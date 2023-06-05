@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct DeviceForm: Codable {
     
     let deviceId: String

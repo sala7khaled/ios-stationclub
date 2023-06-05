@@ -6,7 +6,6 @@
 //  Copyright © 2022 Salah Khaled. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 enum FontName {
